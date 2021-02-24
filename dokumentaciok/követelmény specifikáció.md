@@ -22,3 +22,5 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 	-2005.évi XC. törvény az elektronikus információszabadságról
 	-2003.évi C. törvény az elektronikus hírközlésről (kifejezetten a 155.§-a)
 	16/2011. sz. vélemény a viselkedésalapú online reklám bevált gyakorlatára vonatkozó EASA/IAB-ajánlásról
+	
+## 5.Jelenlegi üzleti folyamatok modellje
