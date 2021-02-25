@@ -46,3 +46,5 @@ ID | Név | Kifejtés
     K9 | Felhasználó törlésének megakadályozása | Amennyiben vásárolt a felhasználó, nem törölheti a felhasználóját, mert a vásárlással kapcsolatos dokumentációk itt találhatóak, illetve az elektromos autójában is ezzel a felhasználóval jelentkezhet be az ottani alkalmazás áruházba.
     K10 | Rendelés visszavonása | A felhasználónak lehetősége van visszavonni a rendelését a rendelést követő 48 órán belül, erre egy dedikált gomb van elhelyezve a felhasználó profiljában.
     K11 | Hibajelentés | A felhasználó képes jelenteni az oldalon tapasztalt hibákat
+	
+## 8.Fogalomtár
