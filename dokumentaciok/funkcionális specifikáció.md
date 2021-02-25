@@ -10,6 +10,13 @@ Illetve elektromos autókról van szó, ezért az extráknak megfelelően látha
 
 ## Jelenlegi helyzet
 
+Jelenleg az autóvásárlások a legtöbb cégnél még offline formában működnek, egy autószalonban, ezt szeretnénk kikerülni, mert felesleges befeketetésnek tartjuk, plusz sokkal egyszerűbb online intézni ezeket a dolgokat az otthon kényelméből.
+Az autószalonokban többnyire előre specifikált extrákkal rendelkező autókat tudunk vásárolni, a mi esetünkben azonban mi választhatjuk majd ki az extrákat, és ennek megfelelő autót kapunk a kezünkbe.
+Ha esetleg valamelyik modellünk nem elérhető, arról az ügyfél azonnali tájékoztatást kap, hiszen a weboldalon mindig az aktuálisan megrendelhető modellek,extrák állnak rendelkezésre, ezzel kiküszöbölve azt a jelenlegi helyzetet, hogy sokszor csak az ügyfél utánajárása után fog kiderülni, hogy az adott autó az adott felszereltséggel nincs készleten, ez az ügyfélnek kellemetlen benyomást kelthet a cégről, illetve pazaroljük a kliensünk idejét és pénzét, hiszen jobb esetben egy telefonhívás után tudja meg ezt az informáciiót, rosszabb esetben 100km utazás után.
+Jelenleg az autószalonok többnyire papír alapú dokumentálást használnak, ami több problémát is felvet: a papír alapú módszer tény ami tény, működik, de eléggé lassú, emberi hibából adódóan a félre értések esélye jelentős. A megírt lapok elveszhetnek, szennyeződhetnek, az emberi írás mások számára olvashatatlan lehet. 
+Ezt szeretnénk elkerülni teljeskörű online ügyintézéssel, online számlákkal, és a vírushelyzetre való tekintettel online aláírással is.
+
+
 
 ## Követelménylista
 
