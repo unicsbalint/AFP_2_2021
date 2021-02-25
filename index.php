@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="frontEnd/css/style.css">
-    <script src="frontEnd/js/dummyScript.js"></script>
+    <link rel="stylesheet" href="src/view/css/style.css">
+    <script src="src/view/js/dummyScript.js"></script>
     <title>Anabolic Tesla</title>
 </head>
 <body>
