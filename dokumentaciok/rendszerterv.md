@@ -16,3 +16,8 @@ Az általunk kínált megoldással azonban ez a folyamat leegyszerűsödne. Emel
 - email címét
 - és üzenetként információkat a vásárolni kívánt autóról
 <p>Először emailba, majd telefonon leegyezteti az időpontot a vásárlásra vonatkozóan. Így már csak a megbeszélt időpontban kell megjelennie és megtekintenie a járművét.</p>
+
+## 4. Funkcionális leírás
+Az összes ügyfél számára látható az éppen bérelhető autók valamint a szalonnal kapcsolatos adatok.
+Azonban csak az autókkal kapcsolatos műveleteket csak az üzletvezető képes módosítani.
+Leggyakoribb használati esete azonban mégis az ügyfelek böngészése lesz a weboldalon.
