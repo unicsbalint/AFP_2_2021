@@ -55,7 +55,7 @@ A mai korban elengedhetetlen követelmény a biztonság. Ezt a különböző fel
 ## 10.Implementációs terv
 A webáruház felülete HTML, JavaScript nyelven készül. Az elemeket CSS fájlok segítségével dizájnoljuk. A termékek és a felhasználók tárolására szükség van adatbázisra is. A webáruház backend részét PHP nyelven valósítjuk meg. A fájlokat külön választjuk, az átláthatóság és az egyszerűbb bővítés érdekében.
 
-## Tesztelési terv
+## 11.Tesztelési terv
 A tesztelés során az oldalon megvalósított funkciók működését figyeljük. A teszteléssel a különböző hibák megtalálása a cél.
  A teszteléseket a fejlesztői csapat minden tagja elvégzi. Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
  A dokumentum táblázatos formában beküldendő.
@@ -69,3 +69,9 @@ A tesztelés során az oldalon megvalósított funkciók működését figyeljü
  ----------|--------------|---------------|----------|-----------
  például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával sikeresen regisztrálni tud  | A felhasználó sikeresen regisztrált | Nem találtam problémát.
  ... | ... | ... | ... | ...
+
+## 12. Telepítési terv
+A áruház internet segítségével lesz elérhető egy webcímen keresztül. A webcím megadásával a felhasználó a webáruház főoldalára kerül.
+A legtöbb böngészőből elérhető a weboldal, továbbá minden interneteléréssel rendelkező eszköz eléri az oldalt.
+A webáruház telepítésekor szükséges, hogy egy szerverszolgáltatáshoz kapcsolódjon, mivel a háttérben adatbáziskezelés történik.
+A telepítés során fontos, hogy a szerver elérési útja megváltozhat, ez esetben módosítani kell azt a megfelelő fájlban.
