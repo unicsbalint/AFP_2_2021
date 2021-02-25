@@ -33,3 +33,16 @@ A megrendelő ügyfele otthon, vagy akár a buszon ülve is képes információt
 
 ## 7.Követelmény lista
 
+ID | Név | Kifejtés
+    -- | --- | --------
+    K1 | Regisztráció | A felhasználó regisztrálni tud az oldalra.
+    K2 | Bejelentkezés | Regisztráció után a felhasználó bejelentkezhet, ezáltal hozzáfér a további funkciókhoz.
+    K3 | Virtuális auto összerakó | Az alkalamzás lehetővé teszi, hogy a saját autónkat "legózzuk" össze.
+    K4 | Akadálymentesítés | A webáruház segíti a hátrányos helyzetű felhasználókat.
+    K5 | Autó elmentése | A felhasználó képes elmenteni egy számára tökéletesen felszerelt autót.
+    K6 | Értékelési felület | Regisztrált felhasználóink tudják értékelni a termékeket és a szolgáltatásokat, valamint szöveges megjegyzést is tehetnek.
+    K7 | Felhasználói fiók módosítása | A bejelentkezett felhasználó képes az adatait módosítani.
+    K8 | Felhasználó törlése | Az adatbázisból törlésre kerül a felhasználó minden adata.
+    K9 | Felhasználó törlésének megakadályozása | Amennyiben vásárolt a felhasználó, nem törölheti a felhasználóját, mert a vásárlással kapcsolatos dokumentációk itt találhatóak, illetve az elektromos autójában is ezzel a felhasználóval jelentkezhet be az ottani alkalmazás áruházba.
+    K10 | Rendelés visszavonása | A felhasználónak lehetősége van visszavonni a rendelését a rendelést követő 48 órán belül, erre egy dedikált gomb van elhelyezve a felhasználó profiljában.
+    K11 | Hibajelentés | A felhasználó képes jelenteni az oldalon tapasztalt hibákat
