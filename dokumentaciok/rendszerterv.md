@@ -25,6 +25,21 @@ Leggyakoribb használati esete azonban mégis az ügyfelek böngészése lesz a 
 ## 5. Fizikai környezet
 Az alkalmazás bármilyen operációs rendszeren képes lesz elfutni, mivel egy webes alkalmazásról van szó, az általunk készített kódot a különböző böngészők képesek értelmezni. Ebből adódóan nem igényel hatalmas erőforrásokat, egy kétmagos processzor, valamint 2-4GB memóriával (RAM) rendelkező számitógép/laptop képes hiba nélkül futtatni az alkalmazást.
 
+## 6. Követelmények
+
+   * **Funkcionális követelmények:**
+
+       - A felhasználó adatainak eltárolása
+       - A termékek adatainak eltárolása
+       - A felhasználói értékelések eltárolása
+       - A termékek közötti keresés megvalósítása
+       - A termék kosárba helyezésének kialakítása
+       - A vásárlás menetének kialakítása
+
+   * **Nemfunkcionális követelmények:**
+
+       - A rendszernek egyszerre több felhasználót kell kiszolgálnia
+
 ## 7. Absztrakt domain modellje
 ![AbsztraktDomainModell](Images/Abstract-Domain-Modell.png)
 
