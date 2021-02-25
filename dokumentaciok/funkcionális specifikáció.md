@@ -30,6 +30,7 @@ ID | Név | Kifejtés
     K8 | Felhasználó törlése | Az adatbázisból törlésre kerül a felhasználó minden adata.
     K9 | Felhasználó törlésének megakadályozása | Amennyiben vásárolt a felhasználó, nem törölheti a felhasználóját, mert a vásárlással kapcsolatos dokumentációk itt találhatóak, illetve az elektromos autójában is ezzel a felhasználóval jelentkezhet be az ottani alkalmazás áruházba.
     K10 | Rendelés visszavonása | A felhasználónak lehetősége van visszavonni a rendelését a rendelést követő 48 órán belül, erre egy dedikált gomb van elhelyezve a felhasználó profiljában.
+    K11 | Hibajelentés | A felhasználó képes jelenteni az oldalon tapasztalt hibákat
 
 ## Jelenlegi üzleti folyamatok modellje
 
@@ -39,10 +40,12 @@ ID | Név | Kifejtés
 
 ## Használati esetek
 
+ **Regisztrált felhasználó**: A regisztrált felhasználó képes rendelni a webáruházból, rendeléskor a fiókjában megadott adatok automatikusan kitöltésre kerülnek. Meg tudja változtatni a saját adatait, képes elmenteni a megtetszett termékeket és később megvásárolni azokat és értékelni tudja a webáruház termékeit, szolgáltatásait.
+ **Admin felhasználó**: Az admin felhasználó látja a felhasználók által küldött hibajelentéseket, felelős a webáruház megfelelő működéséért.
 
 ## Képernyő tervek
-
-
+![Image](https://github.com/unicsbalint/AFP_2_2021/blob/main/dokumentaciok/tervek%2C%20%C3%A1br%C3%A1k/kepernyoterv.jpg)
+https://github.com/unicsbalint/AFP_2_2021/blob/main/dokumentaciok/tervek%2C%20%C3%A1br%C3%A1k/kepernyoterv.jpg
 ## Forgatókönyv
 
 
