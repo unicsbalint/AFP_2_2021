@@ -25,7 +25,7 @@ AZ EURÓPAI PARLAMENT ÉS A TANÁCS 1169/2011/EU RENDELETE (2011. október 25.) 
 	
 ## 5.Jelenlegi üzleti folyamatok modellje
 
-A jelenlegi rendszerben az megrendelő ügyfeleinek, elkell menniük az autószalon telephelyére, vagy el kell lárogassanak az autószalon  weboldalára, ahol láthatja milyen autó kínálattal rendelkeznek, ezek közül tud választani egyet. Ezután egy ott dolgozóval pontosan fixálják az adatokat, hogy mikor kell, a vásárlási folyamat első szakasza ezzel végbe is zajlott. A második szakasza a vásárlásnak akkor kezdődik amikor érte megy az előre egyeztetett autóért, ilyenkor keresnie kell egy ott dolgozót, aki segít neki átadja a szükséges dolgokat, ezután elviheti az autót.
+A jelenlegi rendszerben az megrendelő ügyfeleinek, elkell menniük az autószalon telephelyére, vagy el kell látogassanak az autószalon  weboldalára, ahol láthatja milyen autó kínálattal rendelkeznek, ezek közül tud választani egyet. Ezután egy ott dolgozóval pontosan fixálják az adatokat, hogy mikor kell, a vásárlási folyamat első szakasza ezzel végbe is zajlott. A második szakasza a vásárlásnak akkor kezdődik amikor érte megy az előre egyeztetett autóért, ilyenkor keresnie kell egy ott dolgozót, aki segít neki átadja a szükséges dolgokat, ezután elviheti az autót.
 
 ## 6.Igényelt üzleti folyamatok modellje
 
