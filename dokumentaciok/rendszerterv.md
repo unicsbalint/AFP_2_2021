@@ -48,3 +48,9 @@ Az architektúrális tervnek a funkcionális követelményeken túl fontos elem�
 A felhasználók karbantartása is megvalósul. A hosszú ideje inaktív felhasználók előszöt email-ban értesítést kapnak majd ha erre sem reagálnak akkor a rendszer automatikusan törli így helyet szabadít fel a jövendőbeli felhasználóknak. Abban az esetben ha betelt a férőhelyek száma betelt akkor egy hibaüzenetet ad amelyben jelzi a felhasználó felé, hogy nincs lehetősége regisztrálni, térjen vissza később.
 Másik erőssége az alkalmazásnak, hogy az üzemeltetése egyszerű. Az esetleges szerver meghibásodás vagy szolgáltató váltás esetén gond nélkül áttelepíthető másik állomásra.</br>
 A mai korban elengedhetetlen követelmény a biztonság. Ezt a különböző felhasználói jogosultságokkal érhető el. Ennek köszönhetően a látogatók nem tudják az autók adatait módosítani valamint nem férhetnek hozzá bizalmas információkhoz. A felhasználók kezelése a token rendszerrel valósul meg.
+
+
+## 9. Adatbázis terv
+
+## 10.Implementációs terv
+A webáruház felülete HTML, JavaScript nyelven készül. Az elemeket CSS fájlok segítségével dizájnoljuk. A termékek és a felhasználók tárolására szükség van adatbázisra is. A webáruház backend részét PHP nyelven valósítjuk meg. A fájlokat külön választjuk, az átláthatóság és az egyszerűbb bővítés érdekében.
