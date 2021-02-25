@@ -30,3 +30,6 @@ A jelenlegi rendszerben az megrendelő ügyfeleinek, elkell menniük az autósza
 ## 6.Igényelt üzleti folyamatok modellje
 
 A megrendelő ügyfele otthon, vagy akár a buszon ülve is képes információt szeretni arról, hogy milyen autók lelhetők fel az autószalonban, ezeket telefonon vagy akár e-mail-en is letudja foglalni. Az előre fixált időponton az ügyfél elfárad az autószalonba, ahol az ott dolgozók már várni fogják. Elkísérik az általa kiválasztott autóhoz, majd átadják a szükséges dolgokat. Ezután az ügyfél viheti az autót.
+
+## 7.Követelmény lista
+
