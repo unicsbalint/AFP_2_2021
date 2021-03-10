@@ -47,10 +47,9 @@ ID | Név | Kifejtés
 ![Image](https://github.com/unicsbalint/AFP_2_2021/blob/main/dokumentaciok/tervek%2C%20%C3%A1br%C3%A1k/kepernyoterv.jpg)
 https://github.com/unicsbalint/AFP_2_2021/blob/main/dokumentaciok/tervek%2C%20%C3%A1br%C3%A1k/kepernyoterv.jpg
 ## Forgatókönyv
-
-
-## Funkció - követelmény megfeleltetés
-
+Bob elektromos autót szeretne vásárolni, ezért bemegy a legközelebbi autókereskedésbe, ahol nem kap megfelelő információkat az autóról amit szeretne, ezért még utánanéz neten, ahol megtalálja az oldalunkat, ahol saját magának össze tudja válogatni a megfelelő felszereltséget, akkumulátort az autójához,
+úgy gondolja, hogy akik ilyen igényes weboldalt csinálnak, ilyen innovatív módszerekkel azokban meg lehet bízni, ezért a helyi kereskedés helyett
+tőlünk rendeli meg az autót.
 
 
 ## Fogalomszótár
