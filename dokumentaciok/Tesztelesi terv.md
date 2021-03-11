@@ -6,3 +6,17 @@ pedig a nagyobb komponensek az <strong>AutoRegister</strong>, <strong>Login</str
 <strong>Authentication</strong>. A tesztelést frontend részen tesztelők végzik akik végig járják az oldalakat, funkciókat és ellenőrzik, hogy minden az
 annak megfelelő módon működik illetve néz ki. Backenden pedig egy algoritmussal terhelni az adatbázist illetve a szervert valamint tesztelők közreműködésével a
 különböző funkciókat/komponenseket. A backend teszteléséhez használatos program első sorban az <strong>Insomnia</strong>.</br>
+
+![Tesztkörnyezet](images/tesztkornyezet.png)
+
+## Bevezetés
+Tesztelési tervünk célja a tesztelés felgyorsítása, gördülékenyebbé tevése. Biztosítani, hogy minden lényeges valamint elengedhetetlen funkció, oldal és interaktív felület tesztelésre kerüljön.
+
+
+## Tesztadatok
+•	A teszt végrehajtásához szükséges rekordok (tesztadatok) száma: 59</br>
+•	A tesztadatok elkészítéséért és feltöltéséért felelős személy: Molnár Péter
+
+
+## Fejlesztői teszt
+A fejlesztés vége felé közeledve a fejlesztői csapat tagjai a lehető legtöbb módon átvizsgálja az oldalt, teszt alá vetik az oldal által nyújtott lehetőségeket, funkciókat.
