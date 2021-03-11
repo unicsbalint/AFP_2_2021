@@ -20,3 +20,17 @@ Tesztelési tervünk célja a tesztelés felgyorsítása, gördülékenyebbé te
 
 ## Fejlesztői teszt
 A fejlesztés vége felé közeledve a fejlesztői csapat tagjai a lehető legtöbb módon átvizsgálja az oldalt, teszt alá vetik az oldal által nyújtott lehetőségeket, funkciókat.
+
+## Tesztelendő elvárások
+![TesztelendőElvárások](Pictures/tesztelendo_elvarasok.jpg)
+
+## Tesztelt elvárások
+![TeszteltElvárások](Pictures/tesztelt_elvarasok.jpg)
+
+## Elfogadási kritériumok
+A teszt sikerességének kritériumai:</br>
+•	Technikai, a teszt forgatókönyvben leírtak szerint.</br>
+•	A projekt menedzser jóváhagyása.
+
+## Leszállítandó dokumentumok
+![LeszállítandóTesztDokumentumok](Pictures/leszallitando_teszt_dokumentumok.jpg)
