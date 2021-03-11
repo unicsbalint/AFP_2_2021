@@ -13,16 +13,20 @@
 <body>
 <div class="navContainer">
     <div class="topnav">
-      <a id="modelS" href="#">MODEL S</a>
-      <a href="#">MODEL 3</a>
+      <a id="modelS">MODEL S</a>
+      <a id="model3">MODEL 3</a>
       <a href="#">MODEL X</a>
       <a href="#">MODEL Y</a>
     </div>
 </div>
     <div id="homepageHeader"></div>
     <div id="homepage-S">
-      <div style="display:none" class="modelText">MODEL S</div>
+      <div style="display:none" id="modelSText">MODEL S</div>
       <div style="display:none" id="orderS">Custom order</div>
+    </div>
+    <div id="homepage-3">
+      <div style="display:none" id="model3Text">MODEL 3</div>
+      <div style="display:none" id="order3">Custom order</div>
     </div>
 </body>
 </html>
