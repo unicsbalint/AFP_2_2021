@@ -50,12 +50,36 @@ $(document).ready(function(){
     });
 
     $(window).on("scroll", function(){
-        if($("html").scrollTop() >= $('#homepage-3').offset().top){
-          $("#model3Text").fadeIn(1000);
-          $("#order3").fadeIn(1000);
+        if($("html").scrollTop() >= $('#homepage-X').offset().top){
+          $("#modelXText").fadeIn(1000);
+          $("#orderX").fadeIn(1000);
         }
       });
     
+    //modell X
+
+    $("#modelX").click(function(){
+      $('html, body').animate({      
+          scrollTop: ($('#homepage-X').offset().top)
+      },500);       
+      $("#modelXText").fadeIn(1000);
+        $("#orderX").fadeIn(1000);
+  });
+
+  $("#orderX").click(function(){
+      $('html, body').animate({      
+          scrollTop: ($('#homepageHeader').offset().top)
+      },500);    
+      
+  });
+
+  $(window).on("scroll", function(){
+      if($("html").scrollTop() >= $('#homepage-X').offset().top){
+        $("#modelXText").fadeIn(1000);
+        $("#orderX").fadeIn(1000);
+      }
+    });
+
     
 });
 

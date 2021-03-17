@@ -15,7 +15,7 @@
     <div class="topnav">
       <a id="modelS">MODEL S</a>
       <a id="model3">MODEL 3</a>
-      <a href="#">MODEL X</a>
+      <a id="modelX">MODEL X</a>
       <a href="#">MODEL Y</a>
     </div>
 </div>
@@ -27,6 +27,10 @@
     <div id="homepage-3">
       <div style="display:none" id="model3Text">MODEL 3</div>
       <div style="display:none" id="order3">Custom order</div>
+    </div>
+    <div id="homepage-X">
+      <div style="display:none" id="modelXText">MODEL X</div>
+      <div style="display:none" id="orderX">Custom order</div>
     </div>
 </body>
 </html>
