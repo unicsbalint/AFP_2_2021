@@ -138,3 +138,37 @@ background-color: white;
   margin-bottom: 33%;
 }
 
+#homepage-Y{
+  background-image: url("../images/homepage/model_y.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homepage-Y #orderY{
+text-shadow: 1px 1px black;
+font-size: 26px;
+margin-top: 30%;
+border-radius: 60px;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+/*font-weight: bold;*/
+border: 3px solid white;
+}
+#homepage-Y #orderY:hover{
+cursor: pointer;
+color:black;
+background-color: white;
+}
+#modelYText{
+  text-shadow: 1px 1px black;
+  font-size: 72px;
+  color:white;
+  position: absolute;
+  margin-bottom: 33%;
+}
+

@@ -50,9 +50,9 @@ $(document).ready(function(){
     });
 
     $(window).on("scroll", function(){
-        if($("html").scrollTop() >= $('#homepage-X').offset().top){
-          $("#modelXText").fadeIn(1000);
-          $("#orderX").fadeIn(1000);
+        if($("html").scrollTop() >= $('#homepage-3').offset().top){
+          $("#model3Text").fadeIn(1000);
+          $("#order3").fadeIn(1000);
         }
       });
     
@@ -77,6 +77,30 @@ $(document).ready(function(){
       if($("html").scrollTop() >= $('#homepage-X').offset().top){
         $("#modelXText").fadeIn(1000);
         $("#orderX").fadeIn(1000);
+      }
+    });
+
+    // modell Y
+
+    $("#modelY").click(function(){
+      $('html, body').animate({      
+          scrollTop: ($('#homepage-Y').offset().top)
+      },500);       
+      $("#modelYText").fadeIn(1000);
+        $("#orderY").fadeIn(1000);
+  });
+
+  $("#orderY").click(function(){
+      $('html, body').animate({      
+          scrollTop: ($('#homepageHeader').offset().top)
+      },500);    
+      
+  });
+
+  $(window).on("scroll", function(){
+      if($("html").scrollTop() >= $('#homepage-Y').offset().top){
+        $("#modelYText").fadeIn(1000);
+        $("#orderY").fadeIn(1000);
       }
     });
 

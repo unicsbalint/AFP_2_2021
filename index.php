@@ -16,7 +16,7 @@
       <a id="modelS">MODEL S</a>
       <a id="model3">MODEL 3</a>
       <a id="modelX">MODEL X</a>
-      <a href="#">MODEL Y</a>
+      <a id="modelY">MODEL Y</a>
     </div>
 </div>
     <div id="homepageHeader"></div>
@@ -31,6 +31,10 @@
     <div id="homepage-X">
       <div style="display:none" id="modelXText">MODEL X</div>
       <div style="display:none" id="orderX">Custom order</div>
+    </div>
+    <div id="homepage-Y">
+      <div style="display:none" id="modelYText">MODEL Y</div>
+      <div style="display:none" id="orderY">Custom order</div>
     </div>
 </body>
 </html>
