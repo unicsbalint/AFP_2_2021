@@ -75,3 +75,11 @@ A áruház internet segítségével lesz elérhető egy webcímen keresztül. A 
 A legtöbb böngészőből elérhető a weboldal, továbbá minden interneteléréssel rendelkező eszköz eléri az oldalt.
 A webáruház telepítésekor szükséges, hogy egy szerverszolgáltatáshoz kapcsolódjon, mivel a háttérben adatbáziskezelés történik.
 A telepítés során fontos, hogy a szerver elérési útja megváltozhat, ez esetben módosítani kell azt a megfelelő fájlban.
+
+## 13. Karbantartási terv
+A webáruház karbantartására időről időre sor fog kerülni illetve a lehető leghamarabb, amennyiben az oldal működését megnehezítő hibát
+találunk. A hibafelderítés meggyorsítása érdekében szeretnénk az oldalon egy 'Jelentés' gombot elhelyezni, mely megnyomásával, és a mezők kitöltésével a felhansználó küldhet visszajelzést, amennyiben egy funkció nem működik megfelelően.
+Ezeket a jelentéseket a fejlesztői csapat tagjai látni fogják, így hamar meg tudják kezdeni a hibák javítását.
+A hibajelentés elküldésekor két mezőt fogunk látni magunk előtt: Az egyikben a probléma rövid, párszavas megfogalmazása szükséges, ezen mező
+kitöltése kötelező, a másik mező a probléma részletesebb leírására szolgál mely kitöltése opcionális.
+A biztonság növelése érdekében szükséges bármilyen módosítás előtt az oldalról egy biztonsági mentést készíteni.
