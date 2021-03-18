@@ -51,3 +51,6 @@ A mai korban elengedhetetlen követelmény a biztonság. Ezt a különböző fel
 
 ## 9. Adatbázis terv
 ![Adatbazisterv](tervek,%20ábrák/adatbazis_terv.png)
+
+## 10.Implementációs terv
+A webáruház felülete HTML, JavaScript nyelven készül. Az elemeket CSS fájlok segítségével dizájnoljuk. A termékek és a felhasználók tárolására szükség van adatbázisra is. A webáruház backend részét PHP nyelven valósítjuk meg. A fájlokat külön választjuk, az átláthatóság és az egyszerűbb bővítés érdekében.
