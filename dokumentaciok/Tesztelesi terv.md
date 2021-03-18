@@ -33,4 +33,4 @@ A teszt sikerességének kritériumai:</br>
 •	A projekt menedzser jóváhagyása.
 
 ## Leszállítandó dokumentumok
-![LeszállítandóTesztDokumentumok](images/leszallitando_teszt_dokumentumok.jpg)
+![LeszállítandóTesztDokumentumok](images/leszalitando_teszt_dokumentumok.jpg)
