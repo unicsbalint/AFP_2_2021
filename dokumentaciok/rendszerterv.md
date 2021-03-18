@@ -41,4 +41,4 @@ Az alkalmazás bármilyen operációs rendszeren képes lesz elfutni, mivel egy 
        - A rendszernek egyszerre több felhasználót kell kiszolgálnia
 
 ## 7. Absztrakt domain modellje
-![AbsztraktDomainModell](tervek, ábrák/Abstract-Domain-Modell.png)
+![AbsztraktDomainModell](tervek, ábrák/Abstract-Domain-Modell.jpg)
