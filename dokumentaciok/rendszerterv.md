@@ -41,7 +41,7 @@ Az alkalmazás bármilyen operációs rendszeren képes lesz elfutni, mivel egy 
        - A rendszernek egyszerre több felhasználót kell kiszolgálnia
 
 ## 7. Absztrakt domain modellje
-![AbsztraktDomainModell](Images/Abstract-Domain-Modell.png)
+![AbsztraktDomainModell](images/Abstract-Domain-Modell.png)
 
 ## 8. Architektúrális terv
 Az architektúrális tervnek a funkcionális követelményeken túl fontos elemét képezik a rendszer használatát befolyásoló tényezők is. Az adatok tárolását adatbázisok segítségével biztosítjuk így rugalmasság szempontjából a későbbi bővítésekre is felkészültünk. Az adatbázis további felhasználók tekintetében 10 ezer felhasználó adatainak tárolására képes. Ezen belül 100 felhasználói fiók a cég alkalmazottjai, vezetősége részére van fenntartva. Emellett valós időben 100 és 200 közötti felhasználót tud biztonságosan kezelni egyszerre.</br>
@@ -51,7 +51,7 @@ A mai korban elengedhetetlen követelmény a biztonság. Ezt a különböző fel
 
 
 ## 9. Adatbázis terv
-![Adatbazisterv](Images/adatbazis_terv.png)
+![Adatbazisterv](images/adatbazis_terv.png)
 
 ## 10.Implementációs terv
 A webáruház felülete HTML, JavaScript nyelven készül. Az elemeket CSS fájlok segítségével dizájnoljuk. A termékek és a felhasználók tárolására szükség van adatbázisra is. A webáruház backend részét PHP nyelven valósítjuk meg. A fájlokat külön választjuk, az átláthatóság és az egyszerűbb bővítés érdekében.
