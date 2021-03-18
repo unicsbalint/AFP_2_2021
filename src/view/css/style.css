@@ -1,33 +1,174 @@
 body, html {
     height: 100%;
     margin: 0;
+    font-family: 'Gotham Medium',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-#homepage{
-    background-image: url("../images/homepage.jpg");
+.navContainer {
+  position: absolute;
+  margin: 20px;
+  width: 90%;
+  display:none;
+  
+}
+
+.topnav {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.topnav a {
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#homepageHeader{
+    background-image: url("../images/homepage/homepage.jpg");
     height: 100%; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.navContainer {
-    position: absolute;
-    margin: 20px;
-    width: 100%;
- 
-  }
-  
-  .topnav {
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
 
-  }
-  .topnav a {
-    font-family: 'Gotham Medium',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 24px;
-  }
+#homepage-S{
+  background-image: url("../images/homepage/model_s.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homepage-S #orderS{
+text-shadow: 1px 1px black;
+font-size: 26px;
+margin-top: 20%;
+border-radius: 60px;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+/*font-weight: bold;*/
+border: 3px solid white;
+}
+#homepage-S #orderS:hover{
+cursor: pointer;
+color:black;
+background-color: white;
+}
+#modelSText{
+  text-shadow: 1px 1px black;
+  font-size: 72px;
+  color:white;
+  position: absolute;
+  margin-bottom: 33%;
+}
+
+
+#homepage-3{
+  background-image: url("../images/homepage/model_3.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homepage-3 #order3{
+text-shadow: 1px 1px black;
+font-size: 26px;
+margin-top: 30%;
+border-radius: 60px;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+/*font-weight: bold;*/
+border: 3px solid white;
+}
+#homepage-3 #order3:hover{
+cursor: pointer;
+color:black;
+background-color: white;
+}
+#model3Text{
+  text-shadow: 1px 1px black;
+  font-size: 72px;
+  color:white;
+  position: absolute;
+  margin-bottom: 33%;
+}
+
+#homepage-X{
+  background-image: url("../images/homepage/model_x.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homepage-X #orderX{
+text-shadow: 1px 1px black;
+font-size: 26px;
+margin-top: 30%;
+border-radius: 60px;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+/*font-weight: bold;*/
+border: 3px solid white;
+}
+#homepage-X #orderX:hover{
+cursor: pointer;
+color:black;
+background-color: white;
+}
+#modelXText{
+  text-shadow: 1px 1px black;
+  font-size: 72px;
+  color:white;
+  position: absolute;
+  margin-bottom: 33%;
+}
+
+#homepage-Y{
+  background-image: url("../images/homepage/model_y.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homepage-Y #orderY{
+text-shadow: 1px 1px black;
+font-size: 26px;
+margin-top: 30%;
+border-radius: 60px;
+padding-left: 20px;
+padding-right: 20px;
+color: white;
+/*font-weight: bold;*/
+border: 3px solid white;
+}
+#homepage-Y #orderY:hover{
+cursor: pointer;
+color:black;
+background-color: white;
+}
+#modelYText{
+  text-shadow: 1px 1px black;
+  font-size: 72px;
+  color:white;
+  position: absolute;
+  margin-bottom: 33%;
+}
+
