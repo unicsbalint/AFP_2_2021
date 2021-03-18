@@ -33,10 +33,12 @@ ID | Név | Kifejtés
     K11 | Hibajelentés | A felhasználó képes jelenteni az oldalon tapasztalt hibákat
 
 ## Jelenlegi üzleti folyamatok modellje
+A jelenlegi rendszerben az megrendelő ügyfeleinek, elkell menniük az autószalon telephelyére, vagy el kell látogassanak az autószalon  weboldalára, ahol láthatja milyen autó kínálattal rendelkeznek, ezek közül tud választani egyet. Ezután egy ott dolgozóval pontosan fixálják az adatokat, hogy mikor kell, a vásárlási folyamat első szakasza ezzel végbe is zajlott. A második szakasza a vásárlásnak akkor kezdődik amikor érte megy az előre egyeztetett autóért, ilyenkor keresnie kell egy ott dolgozót, aki segít neki átadja a szükséges dolgokat, ezután elviheti az autót.
 
 
 ## Igényelt üzleti folyamatok modellje
 
+A megrendelő ügyfele otthon, vagy akár a buszon ülve is képes információt szeretni arról, hogy milyen autók lelhetők fel az autószalonban, ezeket telefonon vagy akár e-mail-en is letudja foglalni. Az előre fixált időponton az ügyfél elfárad az autószalonba, ahol az ott dolgozók már várni fogják. Elkísérik az általa kiválasztott autóhoz, majd átadják a szükséges dolgokat. Ezután az ügyfél viheti az autót.
 
 ## Használati esetek
 
@@ -47,10 +49,9 @@ ID | Név | Kifejtés
 ![Image](https://github.com/unicsbalint/AFP_2_2021/blob/main/dokumentaciok/tervek%2C%20%C3%A1br%C3%A1k/kepernyoterv.jpg)
 https://github.com/unicsbalint/AFP_2_2021/blob/main/dokumentaciok/tervek%2C%20%C3%A1br%C3%A1k/kepernyoterv.jpg
 ## Forgatókönyv
-
-
-## Funkció - követelmény megfeleltetés
-
+Bob elektromos autót szeretne vásárolni, ezért bemegy a legközelebbi autókereskedésbe, ahol nem kap megfelelő információkat az autóról amit szeretne, ezért még utánanéz neten, ahol megtalálja az oldalunkat, ahol saját magának össze tudja válogatni a megfelelő felszereltséget, akkumulátort az autójához,
+úgy gondolja, hogy akik ilyen igényes weboldalt csinálnak, ilyen innovatív módszerekkel azokban meg lehet bízni, ezért a helyi kereskedés helyett
+tőlünk rendeli meg az autót.
 
 
 ## Fogalomszótár
