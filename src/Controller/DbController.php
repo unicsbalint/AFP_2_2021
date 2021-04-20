@@ -27,8 +27,8 @@ class DbController
         return $result;
     }
 
-    function executeDML($queryString, $queryParams = []){
-        $connection = $this->connectToDatabase();
+    function executeDML($queryString, $connection, $queryParams = []){
+
         $statement = $connection->prepare($queryString);
         $success = $statement->execute($queryParams);
         $statement->closeCursor();
