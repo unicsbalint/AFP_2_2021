@@ -1,5 +1,6 @@
 <?php
-class dBFunctions{
+class DbController
+{
     function connectToDatabase(){
         $connection = new PDO('mysql:host=localhost;dbname=tesla;','root','');
         $connection->exec("SET NAMES 'utf8'");

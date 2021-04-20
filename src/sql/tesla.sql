@@ -49,7 +49,7 @@ CREATE TABLE `color` (
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `model`
+-- Tábla szerkezet ehhez a táblához `Model`
 --
 
 CREATE TABLE `model` (
@@ -105,7 +105,7 @@ ALTER TABLE `color`
   ADD PRIMARY KEY (`id_color`);
 
 --
--- A tábla indexei `model`
+-- A tábla indexei `Model`
 --
 ALTER TABLE `model`
   ADD PRIMARY KEY (`id_model`);
@@ -140,7 +140,7 @@ ALTER TABLE `color`
   MODIFY `id_color` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT a táblához `model`
+-- AUTO_INCREMENT a táblához `Model`
 --
 ALTER TABLE `model`
   MODIFY `id_model` int(11) NOT NULL AUTO_INCREMENT;
