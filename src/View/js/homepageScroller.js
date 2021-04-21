@@ -21,7 +21,7 @@ $(document).ready(function(){
         // itt majd átirányítjük őket egy másik oldalra webpage/modelS , egyenlőre csak visszavisz a tetejére
     });
 
-    //Ha eléri a model S szekciót betölti (fadeli) az domokat azon a részen.
+    //Ha eléri a Model S szekciót betölti (fadeli) az domokat azon a részen.
     $(window).on("scroll", function(){
         if($("html").scrollTop() >= $('#homepage-S').offset().top){
           $("#modelSText").fadeIn(1000);
