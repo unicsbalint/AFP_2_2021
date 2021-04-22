@@ -11,7 +11,6 @@ $tipusok = $orderController->getTypes();
 <?php
 include "../nav.php";
 ?>
-</body>
 <section class="container">
     <form method="post" class="form-group" name="orderForm" >
         <label for="carmodel">Válasszon egy szint!</label><br></
