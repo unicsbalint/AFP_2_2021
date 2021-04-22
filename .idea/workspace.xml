@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37bd88e6-f322-4562-a220-a83e8fcf5a4d" name="Default Changelist" comment="Bug fixes, now the jQuerry functions are working, added some style changes">
-      <change afterPath="$PROJECT_DIR$/src/View/css/registration.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/View/registration.php" afterDir="false" />
+    <list default="true" id="37bd88e6-f322-4562-a220-a83e8fcf5a4d" name="Default Changelist" comment="registration.php (View) done, It still needs styling but there is a basic style in it">
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/order/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/order/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/css/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/css/registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/registration.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619038880953</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="registration.php (View) done, It still needs styling but there is a basic style in it">
+      <created>1619074581375</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619074581375</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +154,7 @@
     <MESSAGE value="order page created, &#10;database controller, ordercontroller added &#10;dinamically use navbar and header" />
     <MESSAGE value="extra table created and added to the schema" />
     <MESSAGE value="Bug fixes, now the jQuerry functions are working, added some style changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes, now the jQuerry functions are working, added some style changes" />
+    <MESSAGE value="registration.php (View) done, It still needs styling but there is a basic style in it" />
+    <option name="LAST_COMMIT_MESSAGE" value="registration.php (View) done, It still needs styling but there is a basic style in it" />
   </component>
 </project>
