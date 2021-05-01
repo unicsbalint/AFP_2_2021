@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
 
             <button type="submit" name="register">Submit</button>
 
-            <button >Already a member? sign in</button>
+            <button >Already a member? <a href="login.php">sign in</a></button>
         </form>
     </main>
 
