@@ -16,6 +16,7 @@ class OrderController{
         $selectedTypes=$dbfunctions->getList("SELECT `id_color`, `color`, `name` FROM `color` WHERE 1 ");
         return $selectedTypes;
     }
+    
     function getExtras(){
         require_once "DbController.php";
         $dbfunctions=new DbController;
