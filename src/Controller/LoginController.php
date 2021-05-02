@@ -26,6 +26,7 @@ class LoginController{
             $_SESSION['name'] = $record['name'];
             $_SESSION['email'] = $record['email'];   
             header('Location: index.php');
+            return true;
         }
         return false;
     }

@@ -9,9 +9,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['loginSubmit'])) {
     'password' => $_POST['userPassword']
   ];
 
+  $lgController = new LoginController;
+
   if (empty($postData['email']) || empty($postData['password'])) {
     echo "<script>alert('Missing details!');</script>";
-  } else if (!UserLogin($postData['email'], $postData['password'])) {
+  } else if (!$lgController->UserLogin($postData['email'], $postData['password'])) {
     echo "<script>alert('Wrong user details!');</script>";
   }
 
@@ -19,22 +21,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['loginSubmit'])) {
 }
 ?>
 
+
+
 <div style="display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;">
 
 <div style="padding: 10; background-color: light">
-<form>
+<form method="post">
   <div class="form-group">
-    <label for="email">Email address</label>
-    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" placeholder="Email cím">
+    <label for="userEmail">Email address</label>
+    <input type="email" class="form-control" id="userEmail" name="userEmail" aria-describedby="emailHelp" placeholder="Email">
   </div>
   <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" id="userPassword" placeholder="Password">
+    <label for="userPassword">Password</label>
+    <input type="password" class="form-control" id="userPassword" name="userPassword" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-primary">Log in</button>
+  <button type="submit" name="loginSubmit" class="btn btn-primary">Log in</button>
 </form>
 </div>
 </div>
