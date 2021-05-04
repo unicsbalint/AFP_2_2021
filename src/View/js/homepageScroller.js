@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  if(window.location.pathname === '/tesla/src/view/index.php'){
+  if(window.location.pathname === '/tesla/src/view/index.php' || window.location.pathname === '/tesla/src/view/'){
     let modelNav = `
     <a class="modelTexts" id="modelS">MODEL S</a>
     <a class="modelTexts" id="model3">MODEL 3</a>
@@ -25,12 +25,7 @@ $(document).ready(function(){
         },500);       
     });
 
-    $("#orderS").click(function(){
-        $('html, body').animate({      
-            scrollTop: ($('#homepageHeader').offset().top)
-        },500);    
-        // itt majd átirányítjük őket egy másik oldalra webpage/modelS , egyenlőre csak visszavisz a tetejére
-    });
+    
 
     //Ha eléri a Model S szekciót betölti (fadeli) az domokat azon a részen.
     $(window).on("scroll", function(){
@@ -53,12 +48,6 @@ $(document).ready(function(){
           $("#order3").fadeIn(1000);
     });
 
-    $("#order3").click(function(){
-        $('html, body').animate({      
-            scrollTop: ($('#homepageHeader').offset().top)
-        },500);    
-        
-    });
 
     $(window).on("scroll", function(){
         if($("html").scrollTop() >= $('#homepage-3').offset().top){
@@ -77,12 +66,6 @@ $(document).ready(function(){
         $("#orderX").fadeIn(1000);
   });
 
-  $("#orderX").click(function(){
-      $('html, body').animate({      
-          scrollTop: ($('#homepageHeader').offset().top)
-      },500);    
-      
-  });
 
   $(window).on("scroll", function(){
       if($("html").scrollTop() >= $('#homepage-X').offset().top){
@@ -99,13 +82,6 @@ $(document).ready(function(){
       },500);       
       $("#modelYText").fadeIn(1000);
         $("#orderY").fadeIn(1000);
-  });
-
-  $("#orderY").click(function(){
-      $('html, body').animate({      
-          scrollTop: ($('#homepageHeader').offset().top)
-      },500);    
-      
   });
 
   $(window).on("scroll", function(){

@@ -18,22 +18,30 @@ $lgController = new LoginController;
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                    <?php if ($lgController->IsUserLoggedIn()): ?>       
+                        <div class="dropdown-item"><i style="color: gray" class="fa fa-user-circle-o"></i> <?=$_SESSION['name']; ?></div>      
+                        <div class="dropdown-divider"></div>     
+                    <?php endif; ?>
+
+                    <a class="dropdown-item" href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                    
                       <!-- order.php csak bejelentkezés után jelenjen meg a navba -->
                     <?php if ($lgController->IsUserLoggedIn()): ?>
-                        <a class="dropdown-item" href="order/order.php">Order</a>
+                        <a class="dropdown-item" href="order/order.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i> My orders</a>
+                        <a class="dropdown-item" href="order/order.php"><i class="fa fa-user" aria-hidden="true"></i> My profile</a>
                     <?php endif; ?>
-                    
-                    <a class="dropdown-item" href="index.php">Home</a>
                     
                     <!-- Ha már be vagyunk jelentkezve ne jelenjen meg -->
                     <?php if (!$lgController->IsUserLoggedIn()): ?>
-                        <a class="dropdown-item" id="login" href="login.php">Log in</a> 
-                        <a class="dropdown-item" id="register" href="registration.php">Register</a>
+                        <div class="dropdown-divider"></div> 
+                        <a class="dropdown-item" id="login" href="login.php"><i style="color: rgb(0, 66, 65)" class="fa fa-location-arrow" aria-hidden="true"></i></i> Log in</a> 
+                        <a class="dropdown-item" id="register" href="registration.php"><i style="color: rgb(0, 66, 23)" class="fa fa-users" aria-hidden="true"></i> Sign up</a>
                     <?php endif; ?>
                     
-                    <?php if ($lgController->IsUserLoggedIn()): ?>
-                    <div class="dropdown-item"><i class="fa fa-user-circle-o"></i> <?=$_SESSION['name']; ?></div>
-                        <a href="logout.php" class="dropdown-item"><i class="fa fa-power-off"></i> Log out</a>      
+                    <?php if ($lgController->IsUserLoggedIn()): ?>                  
+                        <div class="dropdown-divider"></div> 
+                        <a href="logout.php" class="dropdown-item"><i style="color: red" class="fa fa-power-off"></i> Log out</a>      
                     <?php endif; ?>
                 </div>
         </li>      

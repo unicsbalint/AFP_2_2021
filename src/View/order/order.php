@@ -9,7 +9,7 @@ $tipusok = $orderController->getTypes();
 ?>
 <body>
 <?php
-include "../nav.php";
+//include "../nav.php";
 ?>
 <section class="container">
     <form method="post" class="form-group" name="orderForm" >
@@ -31,7 +31,7 @@ include "../nav.php";
     $count = count($selectedType) - 1;
     for ($i = 0; $i <= $count; $i++) {
         ?>
-        <option value="<?php echo $selectedType[$i]["id"] ?>"><?php echo $selectedType[$i]["model_name"] ?> </option>
+        <option value="<?php echo $selectedType[$i]["id"] ?>"><?php echo $selectedType[$i]["model_name"] ?>$ </option>
     <?php } ?>
 </select>
 <label for="extras">Válasszon egy extrat</label>
