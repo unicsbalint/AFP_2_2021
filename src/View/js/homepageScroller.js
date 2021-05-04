@@ -1,6 +1,17 @@
 $(document).ready(function(){
+
+  if(window.location.pathname === '/tesla/src/view/index.php'){
+    let modelNav = `
+    <a class="modelTexts" id="modelS">MODEL S</a>
+    <a class="modelTexts" id="model3">MODEL 3</a>
+    <a class="modelTexts" id="modelX">MODEL X</a>
+    <a class="modelTexts" id="modelY">MODEL Y</a>`  
+    $("#modelsDiv").html(modelNav);
+  }
+
+
     //Navbar fadein
-    $(".navContainer").fadeIn(2500);
+    $(".modelTexts").fadeIn(2500);
 
     //Az oldal be/újratöltésénél visszaugrik a tetejére
     $('html, body').animate({      

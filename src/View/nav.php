@@ -3,13 +3,14 @@ require_once "../Controller/LoginController.php";
 $lgController = new LoginController;
 
 ?>
+
+<!-- Áthelyeztem ide a js linkjét, mert máshol úgy sem lesz rá szükség! -->
+<script src="./js/homepageScroller.js"></script>
+
 <div class="navContainer">
     <div class="navbar">
-        <!-- Csak akkor kéne megjeleníteni ezeket, ha a homepagen vagyunk, erre majd kell egy method -->
-        <a class="modelTexts" id="modelS">MODEL S</a>
-        <a class="modelTexts" id="model3">MODEL 3</a>
-        <a class="modelTexts" id="modelX">MODEL X</a>
-        <a class="modelTexts" id="modelY">MODEL Y</a>
+        <!-- A modelsDivben van a MODEL választó menü, de csak ha a homepagen vagyunk -> homePageScroller.js-ben megtalálod a kódot hozzá -->
+        <div id="modelsDiv"></div>
 
         <div style="margin-right: 10%; margin-left: 10%"></div>
         <li class="nav-item dropdown" style="list-style-type: none">
@@ -31,8 +32,8 @@ $lgController = new LoginController;
                     <?php endif; ?>
                     
                     <?php if ($lgController->IsUserLoggedIn()): ?>
-                    <div><i class="fa fa-user-circle-o"></i> <?=$_SESSION['name']; ?></div>
-                        <a href="logout.php"><i class="fa fa-power-off"></i> Log out</a>      
+                    <div class="dropdown-item"><i class="fa fa-user-circle-o"></i> <?=$_SESSION['name']; ?></div>
+                        <a href="logout.php" class="dropdown-item"><i class="fa fa-power-off"></i> Log out</a>      
                     <?php endif; ?>
                 </div>
         </li>      
