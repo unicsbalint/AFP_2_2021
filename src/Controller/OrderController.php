@@ -13,7 +13,7 @@ class OrderController{
         require_once "DbController.php";
         $dbfunctions=new DbController;
         $connection=$dbfunctions->connectToDatabase();
-        $selectedTypes=$dbfunctions->getList("SELECT `id_color`, `color`, `name` FROM `color` WHERE 1 ");
+        $selectedTypes=$dbfunctions->getList("SELECT * FROM `color` WHERE 1 ");
         return $selectedTypes;
     }
     

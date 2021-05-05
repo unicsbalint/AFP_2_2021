@@ -1,5 +1,34 @@
 <?php session_start(); ?>
 
+<?php
+
+/*
+Ez egy olyan function lett volna, ami dinamikusan beállítja az elérési útvonalát a css, js fájloknak, hogy 
+csak 1db headert kelljen használnunk az egész projektben.
+Ha valaki gondolja kidolgozhatja:
+
+meghívni az adott fájlból így kéne:
+require header,
+setPath(__FILE__)
+
+Üdv, Bálint
+
+global $path;
+function setPath($page_required){
+    $temp = explode('\\',$page_required);
+    $count = 0;
+    for($i = 0; $i < count($temp); $i++){
+        echo $temp[$i]." ";
+        if($temp[$i] == "View"){
+            $count = count($temp) - $i;
+            break;
+        }
+    }
+}
+
+*/
+?> 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,8 +41,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css" href="src/View/js/cookie warning/purecookie.css" async />
-    <script src="src/View/js/cookie warning/purecookie.js" async></script>
+    <link rel="stylesheet" type="text/css" href="js/cookie warning/purecookie.css" async />
+    <script src="js/cookie warning/purecookie.js" async></script>
 
     <title>Anabolic Tesla</title>
 </head>
