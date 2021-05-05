@@ -16,13 +16,14 @@ body, html {
   margin-right: auto;
 
 }
-.topnav a {
+.modelTexts {
   color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 24px;
   cursor: pointer;
+  display: none;
 }
 
 #homepageHeader{
@@ -53,11 +54,13 @@ padding-right: 20px;
 color: white;
 /*font-weight: bold;*/
 border: 3px solid white;
+text-decoration: none;
 }
 #homepage-S #orderS:hover{
 cursor: pointer;
 color:black;
-background-color: white;
+background-color: rgba(255, 255, 255, 0.815);
+text-decoration: none;
 }
 #modelSText{
   text-shadow: 1px 1px black;
@@ -92,7 +95,8 @@ border: 3px solid white;
 #homepage-3 #order3:hover{
 cursor: pointer;
 color:black;
-background-color: white;
+background-color: rgba(255, 255, 255, 0.815);
+text-decoration: none;
 }
 #model3Text{
   text-shadow: 1px 1px black;
@@ -126,7 +130,9 @@ border: 3px solid white;
 #homepage-X #orderX:hover{
 cursor: pointer;
 color:black;
-background-color: white;
+background-color: rgba(255, 255, 255, 0.815);
+text-decoration: none;
+
 }
 #modelXText{
   text-shadow: 1px 1px black;
@@ -160,7 +166,8 @@ border: 3px solid white;
 #homepage-Y #orderY:hover{
 cursor: pointer;
 color:black;
-background-color: white;
+background-color: rgba(255, 255, 255, 0.815);
+text-decoration: none;
 }
 #modelYText{
   text-shadow: 1px 1px black;

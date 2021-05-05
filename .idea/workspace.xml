@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="37bd88e6-f322-4562-a220-a83e8fcf5a4d" name="Default Changelist" comment="registration.php (View) done, It still needs styling but there is a basic style in it">
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/user/profile.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/css/registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/css/registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/nav.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +74,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -63,9 +88,9 @@
       <recent name="C:\xampp\htdocs\AFP_2_2021\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\AFP_2_2021\src\Controller" />
       <recent name="C:\xampp\htdocs\AFP_2_2021\src\sql" />
       <recent name="C:\xampp\htdocs\AFP_2_2021\src\Model" />
-      <recent name="C:\xampp\htdocs\AFP_2_2021\src\Controller" />
       <recent name="C:\xampp\htdocs\AFP_2_2021\src\views\includes" />
       <recent name="C:\xampp\htdocs\AFP_2_2021\src\views\pages" />
     </key>
@@ -79,6 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616064581449</updated>
       <workItem from="1616064582694" duration="689000" />
+      <workItem from="1620206082729" duration="4124000" />
     </task>
     <task id="LOCAL-00001" summary="Modell creation">
       <created>1616673532316</created>
