@@ -37,7 +37,7 @@ class OrderController{
 
               $insertedId=$connection->lastInsertId();
               $insertOrder=$dbfunctions->executeDML("INSERT INTO `orders`( `description`, `user_id`, `car_id`)
-            VALUES ('{$orderedCar["description"]}','2','{$insertedId}')",$connection);
+            VALUES ('{$orderedCar["description"]}','{$orderedCar["user_id"]}','{$insertedId}')",$connection);
           }catch (Exception $e){
               throw new Exception($e->getMessage());
         }

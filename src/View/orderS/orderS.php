@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,24 +11,45 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="s_style.css">
+
     <script src="orderS.js"></script>
     <title>Anabolic Tesla</title>
 </head>
 
 
 <body>
-    <div>THE MODEL S</div>
-    <div>Description about MODEL S</div>
+    
+    
+    
+<section class="bgimage">
+<div id="heroText">THE MODEL S</div>
+</section>
 
-    <div id="motorDiv">Motor</div>
+<div>Description about MODEL S</div>
 
-    <section>
-    Pick an astonishing color for your new MODEL S
-    <div id="colorDiv">Color</div>
-    </section>
-    <div id="wheelsDiv">Wheels</div>
-    <div id="interiorDiv">Interior</div>
+            <div style="width: 500px; background-color: rgba(255, 255, 255, 0.411);">
+                Pick an astonishing color for your new MODEL S
+                <div id="colorDiv">Color</div>
+            </div>
+
+            <div>
+                Choose from a wide selection of package for your new car
+                <br> (choose one, and you will see what it contains)
+                <div id="packageDiv">Packages</div>
+            </div>
+
+            <textarea id="description" placeholder="Any special request for your order?"></textarea>
+        
+            <a id="orderBtn" class="btn btn-primary btn-large">Order</a>
+            
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Please <a href="/tesla/src/view/login.php">sign in</a> in order to fulfill your order</p>
+        </div>
+        
+        </div>
 
 </body>
 </html>
