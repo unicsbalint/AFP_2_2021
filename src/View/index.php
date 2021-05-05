@@ -1,13 +1,3 @@
-<?php
-//require_once('src/Model/Db/DbController.php');
-//$con = new dBFunctions();
-//$connection = $con->connectToDatabase();
-//$select = $con->getRecord('select * from `Model`');
-//
-//require_once('src/Model/Model.php');
-//$Model=new Model();
-//$Model=$select;
-?>
 
 <!DOCTYPE html>
 <html lang="hu">

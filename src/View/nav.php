@@ -29,8 +29,9 @@ $lgController = new LoginController;
                       <!-- order.php csak bejelentkezés után jelenjen meg a navba -->
                     <?php if ($lgController->IsUserLoggedIn()): ?>
                         <a class="dropdown-item" href="order/order.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i> My orders</a>
-                        <a class="dropdown-item" href="order/order.php"><i class="fa fa-user" aria-hidden="true"></i> My profile</a>
-                    <?php endif; ?>
+                        <a class="dropdown-item" href="user/profile.php"><i class="fa fa-user" aria-hidden="true"></i> My profile</a>
+
+                    <?php  endif; ?>
                     
                     <!-- Ha már be vagyunk jelentkezve ne jelenjen meg -->
                     <?php if (!$lgController->IsUserLoggedIn()): ?>
