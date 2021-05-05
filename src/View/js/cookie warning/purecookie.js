@@ -16,3 +16,15 @@ function pureFadeIn(elem, display){
     }
   })();
 };
+function pureFadeOut(elem){
+  var el = document.getElementById(elem);
+  el.style.opacity = 1;
+
+  (function fade() {
+    if ((el.style.opacity -= .02) < 0) {
+      el.style.display = "none";
+    } else {
+      requestAnimationFrame(fade);
+    }
+  })();
+};
