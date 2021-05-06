@@ -49,23 +49,26 @@ function getUserOrders(){
 require_once "../../Controller/DbController.php";
 $dbfunctions=new DbController;
 $connection=$dbfunctions->connectToDatabase();
-$orders=$dbfunctions->getList("
-SELECT orders.id as order_id, user.name, 
-       model.model_name as 'model',
-       extra.description as 'package',
-       model.model_price + extra.price AS 'finalPrice',
-       orders.description AS 'orderDescription'
+
+$sql = "SELECT orders.id as order_id, user.name, 
+model.model_name as 'model',
+extra.description as 'package',
+model.model_price + extra.price AS 'finalPrice',
+orders.description AS 'orderDescription'
 FROM   orders,
-       user,
-       car,
-       model,
-       extra
-WHERE  orders.user_id = {$_SESSION["user_id"]}
-       AND orders.user_id = orders.user_id
-       AND orders.car_id = car.id_car
-       AND car.id_extra = extra._id
-       AND model.id_model = car.id_model
-");
+user,
+car,
+model,
+extra
+WHERE orders.user_id = {$_SESSION["user_id"]}
+AND user.id_user = {$_SESSION["user_id"]}
+AND orders.user_id = orders.user_id
+AND orders.car_id = car.id_car
+AND car.id_extra = extra._id
+AND model.id_model = car.id_model";
+//var_dump($sql); die();
+
+$orders=$dbfunctions->getList($sql);
 return $orders;
 }
 
