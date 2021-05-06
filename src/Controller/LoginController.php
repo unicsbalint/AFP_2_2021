@@ -23,6 +23,7 @@ class LoginController{
 
         $record = $dbfunctions->getRecord($query, $params);
         if (!empty($record)) {
+            $_SESSION['user_id'] = $record["id_user"];
             $_SESSION['name'] = $record['name'];
             $_SESSION['email'] = $record['email'];   
             header('Location: index.php');

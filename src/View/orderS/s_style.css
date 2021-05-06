@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Gotham Medium',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.bgimage {
+    width:100%;
+    height: 100%; 
+    background-image: url("../images/homepage/model_s.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+#heroText{
+    font-size: 70px;
+    color:white;
+    text-shadow:2px 2px #333;
+    margin-bottom: 10rem;
+}
+
+
+/* Modal CSS */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.623); 
+  }
+  
+  .modal-content {
+    background-color: rgba(236, 236, 236, 0.829);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(15, 15, 15);
+    width: 30%;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+
+  .close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgba(0, 0, 0, 0.582);
+    text-decoration: none;
+    cursor: pointer;
+  }

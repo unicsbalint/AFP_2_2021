@@ -13,7 +13,7 @@ class OrderController{
         require_once "DbController.php";
         $dbfunctions=new DbController;
         $connection=$dbfunctions->connectToDatabase();
-        $selectedTypes=$dbfunctions->getList("SELECT `id_color`, `color`, `name` FROM `color` WHERE 1 ");
+        $selectedTypes=$dbfunctions->getList("SELECT * FROM `color` WHERE 1 ");
         return $selectedTypes;
     }
     
@@ -37,7 +37,7 @@ class OrderController{
 
               $insertedId=$connection->lastInsertId();
               $insertOrder=$dbfunctions->executeDML("INSERT INTO `orders`( `description`, `user_id`, `car_id`)
-            VALUES ('{$orderedCar["description"]}','2','{$insertedId}')",$connection);
+            VALUES ('{$orderedCar["description"]}','{$orderedCar["user_id"]}','{$insertedId}')",$connection);
           }catch (Exception $e){
               throw new Exception($e->getMessage());
         }
