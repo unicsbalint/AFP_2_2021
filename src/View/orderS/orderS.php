@@ -28,7 +28,7 @@
 </section>
 
 
-<div class="album p-5 m-5 bg-light">
+<div class="album p-5 mx-5 bg-light">
     <div class="row justify-content around">
         <div class="col-md-4">
             <div class="col-m-4"><h2>Description about MODEL S</h2></div>
@@ -70,6 +70,8 @@
     </div>
 </div>
 
-
+<?php
+include_once "../footer.php"
+?>
 </body>
 </html>
