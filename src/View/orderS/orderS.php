@@ -27,30 +27,49 @@
 <div id="heroText">THE MODEL S</div>
 </section>
 
-<div>Description about MODEL S</div>
 
-            <div style="width: 500px; background-color: rgba(255, 255, 255, 0.411);">
-                Pick an astonishing color for your new MODEL S
-                <div id="colorDiv">Color</div>
+<div class="album p-5 m-5 bg-light">
+    <div class="row justify-content around">
+        <div class="col-md-4">
+            <div class="col-m-4"><h2>Description about MODEL S</h2></div>
+            <div class="row align-items-start">
+                <div class="col m-4" style="width: 500px; background-color: rgba(255, 255, 255, 0.411);">
+                    Pick an astonishing color for your new MODEL S
+                    <div id="colorDiv">Color</div>
+                </div>
             </div>
 
+            <div class="row align-items-center">
+                <div class="col m-4">
+                    Choose from a wide selection of package for your new car
+                    <br> (choose one, and you will see what it contains)
+                    <div id="packageDiv">Packages</div>
+                </div>
+            </div>
+
+            <div class="row align-items-end">
+                <div class="col m-4">
+                        <textarea id="description" placeholder="Any special request for your order?"></textarea>
+                        <a id="orderBtn" class="btn btn-primary btn-large">Order</a>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Please <a href="/tesla/src/view/login.php">sign in</a> in order to fulfill your order</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 ml">
             <div>
-                Choose from a wide selection of package for your new car
-                <br> (choose one, and you will see what it contains)
-                <div id="packageDiv">Packages</div>
+                <img src="../images/homepage/models_red.jpg" alt="Model s red" width="750px" height="500px">
             </div>
+        </div>
+    </div>
+</div>
 
-            <textarea id="description" placeholder="Any special request for your order?"></textarea>
-        
-            <a id="orderBtn" class="btn btn-primary btn-large">Order</a>
-            
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Please <a href="/tesla/src/view/login.php">sign in</a> in order to fulfill your order</p>
-        </div>
-        
-        </div>
 
 </body>
 </html>

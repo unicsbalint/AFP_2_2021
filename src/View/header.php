@@ -13,6 +13,7 @@ setPath(__FILE__)
 
 Üdv, Bálint
 
+
 global $path;
 function setPath($page_required){
     $temp = explode('\\',$page_required);
@@ -25,8 +26,8 @@ function setPath($page_required){
         }
     }
 }
-
 */
+
 ?> 
 
 <head>
