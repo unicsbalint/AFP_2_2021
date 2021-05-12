@@ -1,26 +1,4 @@
 $(document).ready(function(){
-
-let colors = [
-    'Rough Black',
-    'Bright Metal White',
-    'Metal Gray',
-    'Sky Blue',
-    'Rose Red'];
-
-let models = [
-    'Model S',
-    'Model 3',
-    'Model X',
-    'Model Y'
-];
-
-let package = [
-    'Basic Package',
-    'Bigger Wheels, textil interior package',
-    'Crazy power with dual motor (700hp), and alcantara interior package',
-    'Crazy power with dual motor (700hp) and premium quality interior'
-];
-
 let isUserLoggedIn = false;
     $.ajax({
         url: "localController.php",
@@ -45,12 +23,13 @@ let isUserLoggedIn = false;
         );
         extraDiv += `</select>`
         $("#packageDiv").html(extraDiv);
-       
+
+        //console.log(isUserLoggedIn);
         }
 
 
         });
-        
+
         $("#checkoutBtn").click(function(){
 
             if(!isUserLoggedIn){
@@ -65,7 +44,31 @@ let isUserLoggedIn = false;
                     if (event.target == modal) {
                       modal.style.display = "none";
                     }
-                  }     
+                  }
+                $.ajax({
+                    url: "localController.php",
+                    type: 'POST',
+                    data: { "whichFunction": "getAllData","getUser":false},
+                    dataType: "JSON",
+                    async: false,
+
+                    success: function(response){
+                        let colorIndex = $("#colorPicker").val();
+                        let colorInput = "<div>";
+                        response["szinek"].forEach(element => {
+                            if(colorIndex == `${element["id_color"]}`){
+
+                                $("#colorCheckout").val(`${element["name"]}`);
+                            }
+                        });
+                        colorInput +="</div>";
+
+
+                    },
+                    error: function(response){
+                        console.log(response);
+                    }
+                })
         
                 return;
             };
@@ -73,15 +76,14 @@ let isUserLoggedIn = false;
             $.ajax({
                 url: "localController.php",
                 type: 'POST',
-                data: { "whichFunction":"insertOrderIfLoggedIn",
+                data: { "whichFunction":"insertOrder",
                         "extras":$("#extraPicker").val(),
                         "colors":$("#colorPicker").val(),
                         "models": 1,
                         "description":$("#description").val()
                         },
                 success: function(response) {
-                    if(response && isUserLoggedIn == true){
-                        
+                    if(isUserLoggedIn){  
                         $("#changeableDiv").html("Your order is succesfully placed");
                         var modal = document.getElementById("myModal");
                         var span = document.getElementsByClassName("close")[0];  
@@ -99,23 +101,3 @@ let isUserLoggedIn = false;
             });
         })
 });
-
-function Passer($value, $selectorId, $array) {
-    switch ($value){
-        case 1:
-            $selectorId.text(array[0]);
-            break;
-        case 2:
-            $selectorId.value(array[1]);
-            break;
-        case 3:
-            $selectorId.value(array[2]);
-            break;
-        case 4:
-            $selectorId.value(array[3]);
-            break;
-        case 5:
-            $selectorId.value(array[4]);
-            break;
-    }
-}

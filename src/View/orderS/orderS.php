@@ -68,12 +68,12 @@
 
             <div class="carDetails">
                 <label for="carDetails">Termék adatok</label><br>
-                <input type="text" placeholder="Szín" id="colorCheckout">
-                <input type="text" placeholder="Model">
-                <input type="text" placeholder="Extra">
-                <input type="text" placeholder="Leírás">
+                <input type="text" placeholder="Szín" id="colorCheckout" name="color" value="">
+                <input type="text" placeholder="Model" id="modelCheckout" name="model">
+                <input type="text" placeholder="Extra" id="extraCheckout" name="extra">
+                <input type="text" placeholder="Leírás" id="descriptionCheckout" name="description">
             </div>
-                </div>
+                <button type="button" class="btn btn-primary btn-large">Checkout</button>
             </div>
         </div>
 

@@ -18,6 +18,9 @@ switch($_POST['whichFunction'])
     case "deleteOrder":         
         echo deleteOrder($_POST["order_id"]);
         break;
+    // case "passToModal":
+    //     echo passToModal($_POST);
+    //     break;
     default:
 
     break;
@@ -47,8 +50,9 @@ function insertOrder($data){
     $oc = new OrderController();
     return $oc->insertOrder($data);
 }
+
 function insertOrderIfNotLoggedIn($data){
-    $data["user_id"] = "";
+    $data["user_id"] = "0";
     require_once "../../Controller/OrderController.php";
     $oc = new OrderController();
     return $oc->insertOrder($data);
@@ -91,6 +95,12 @@ DELETE FROM orders WHERE id = {$order_id}
 $connection);
 return $result;
 }
+
+// function passToModal($data) {
+//     $data = [];
+//     $data["color"] = "";
+//     $data["type"] = ""
+// }
 
 
 
