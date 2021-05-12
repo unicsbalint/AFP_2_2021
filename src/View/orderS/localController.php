@@ -9,6 +9,9 @@ switch($_POST['whichFunction'])
     case "insertOrder":        
         echo insertOrder($_POST);   
         break;
+    case "insertOrderIfNotLoggedIn":
+        echo insertOrderIfNotLoggedIn($_POST);
+        break;
     case "getUserOrders":         
         echo json_encode(getUserOrders());
         break;
@@ -40,6 +43,12 @@ function getAllData(){
 
 function insertOrder($data){
     $data["user_id"] = $_SESSION["user_id"];
+    require_once "../../Controller/OrderController.php";
+    $oc = new OrderController();
+    return $oc->insertOrder($data);
+}
+function insertOrderIfNotLoggedIn($data){
+    $data["user_id"] = "";
     require_once "../../Controller/OrderController.php";
     $oc = new OrderController();
     return $oc->insertOrder($data);

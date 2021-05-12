@@ -50,21 +50,36 @@
             <div class="row align-items-end">
                 <div class="col m-4">
                         <textarea id="description" placeholder="Any special request for your order?"></textarea>
-                        <a id="orderBtn" class="btn btn-primary btn-large">Order</a>
+                        <a id="checkoutBtn" class="btn btn-primary btn-large">Order</a>
                 </div>
             </div>
 
             <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Please <a href="/tesla/src/view/login.php">sign in</a> in order to fulfill your order</p>
+            <span class="close" id="close">&times;</span>
+
+              <div class="modal-content" id="changeableDiv">
+                <form action="">
+            <div class="userDetails">
+                <label for="userDetails">Vásárló adatok</label><br>
+                <input type="text" placeholder="Név">
+                <input type="text" placeholder="E-mail">
+                <input typy="text" placeholder="Cím">
+            </div>
+
+            <div class="carDetails">
+                <label for="carDetails">Termék adatok</label><br>
+                <input type="text" placeholder="Szín" id="colorCheckout">
+                <input type="text" placeholder="Model">
+                <input type="text" placeholder="Extra">
+                <input type="text" placeholder="Leírás">
+            </div>
                 </div>
             </div>
         </div>
 
         <div class="col-md-4 ml">
             <div>
-                <img src="../images/homepage/models_red.jpg" alt="Model s red" width="750px" height="500px">
+                <img class="img-fluid" src="../images/homepage/models_red.jpg" alt="Model s red" width="750px" height="500px">
             </div>
         </div>
     </div>
