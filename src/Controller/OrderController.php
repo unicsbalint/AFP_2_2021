@@ -5,7 +5,7 @@ class OrderController{
         require_once "DbController.php";
         $dbfunctions=new DbController;
         $connection=$dbfunctions->connectToDatabase();
-        $selectedColors=$dbfunctions->getList("SELECT `id`, `model_name`, `model_price`, `wheel`, `engine` FROM `model` WHERE 1 ");
+        $selectedColors=$dbfunctions->getList("SELECT * FROM `model`");
         return $selectedColors;
     }
 
