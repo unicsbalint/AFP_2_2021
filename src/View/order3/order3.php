@@ -51,6 +51,15 @@
     </div>
 
 </div>
+</div>
+
+        <div class="col-md-4 ml">
+                <div>
+                        <img src="../images/homepage/model_3.jpg" alt="Model s red" width="750px" height="500px">
+                </div>
+        </div>
+</div>
+</div>
 
 </body>
 </html>
