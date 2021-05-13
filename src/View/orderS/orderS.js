@@ -107,4 +107,42 @@ $(document).ready(function() {
             },
         });
     })
+
+    $("#orderBtn").click(function() {
+        $.ajax({
+            url: "localController.php",
+            type: 'POST',
+            data: {
+                "whichFunction": "insertOrderIfNotRegistered",
+                "user_id": "",
+                "extras": $("#extraPicker").val(),
+                "colors": $("#colorPicker").val(),
+                "models": 1,
+                "description": $("#description").val()
+            },
+            success: function(response) {
+
+            },
+            error: function(response) {
+                console.log(response)
+            }
+        })
+
+        $.ajax({
+            url: "localController.php",
+            type: 'POST',
+            data: {
+                "whichFunction": "inserNotRegisteredUser",
+                "name": $("#nameId").val(),
+                "email": $("#email").val(),
+                "address": $("#addressId").val()
+            },
+            success: function(response) {
+
+            },
+            error: function(response) {
+                console.log(response)
+            }
+        })
+    })
 });

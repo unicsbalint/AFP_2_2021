@@ -64,17 +64,17 @@
                 
                 <div class="row w-100">
                     <label for="nev" class="col px-4">Name: </label>
-                    <input type="text" placeholder="Név" class="col"> 
+                    <input type="text" placeholder="Név" class="col" id="nameId"> 
                 </div>
 
                 <div class="row w-100">
                     <label for="email" class="col px-4">Email: </label>
-                    <input type="text" placeholder="E-mail"class="col">
+                    <input type="text" placeholder="E-mail"class="col" id="email">
                 </div>
 
                 <div class="row w-100">
                     <label for="cim" class="col px-4">Address: </label>
-                    <input typy="text" placeholder="Cím"class="col">
+                    <input typy="text" placeholder="Cím"class="col"id="addressId">
                 </div>
             </div>
 
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div>
-                <button type="button" class="btn btn-primary btn-large">Checkout</button>
+                <button type="button" class="btn btn-primary btn-large" id="orderBtn">Checkout and order</button>
             </div>
         </div>
         </div>

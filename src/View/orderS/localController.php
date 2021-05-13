@@ -9,8 +9,8 @@ switch($_POST['whichFunction'])
     case "insertOrder":        
         echo insertOrder($_POST);   
         break;
-    case "insertOrderIfNotLoggedIn":
-        echo insertOrderIfNotLoggedIn($_POST);
+    case "inserNotRegisteredUser":
+        echo inserNotRegisteredUser($_POST);
         break;
     case "getUserOrders":         
         echo json_encode(getUserOrders());
@@ -18,9 +18,9 @@ switch($_POST['whichFunction'])
     case "deleteOrder":         
         echo deleteOrder($_POST["order_id"]);
         break;
-    // case "passToModal":
-    //     echo passToModal($_POST);
-    //     break;
+    case "insertOrderIfNotRegistered":
+        echo insertOrderIfNotRegistered($_POST);
+        break;
     default:
 
     break;
@@ -51,8 +51,8 @@ function insertOrder($data){
     return $oc->insertOrder($data);
 }
 
-function insertOrderIfNotLoggedIn($data){
-    $data["user_id"] = "0";
+function insertOrderIfNotRegistered($data){
+    $data["user_id"] = "";
     require_once "../../Controller/OrderController.php";
     $oc = new OrderController();
     return $oc->insertOrder($data);
@@ -96,11 +96,23 @@ $connection);
 return $result;
 }
 
-// function passToModal($data) {
-//     $data = [];
-//     $data["color"] = "";
-//     $data["type"] = ""
-// }
+function inserNotRegisteredUser($data){
+    require_once "../../Controller/DbController.php";
+    $dbfunctions = new DbController;
+    $connection = $dbfunctions->connectToDatabase();
+    $insertedUser = $data;
+  
+    try{
+        $newUser = $dbfunctions->executeDML("
+        INSERT INTO `user`( `name`, `email`, `address`)
+        VALUES ('{$insertedUser["name"]}','{$insertedUser["email"]}','{$insertedUser["address"]}')", 
+        $connection);
+
+    }catch (Exception $e){
+        throw new Exception($e->getMessage());
+    }
+    return $newUser;
+}
 
 
 
