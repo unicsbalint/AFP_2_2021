@@ -1,7 +1,7 @@
 $(document).ready(function(){
 $(".navbar").css("marginRight","200px"); 
     $.ajax({
-        url: "orderS/localController.php",
+        url: "../Controller/localController.php",
         type: 'POST',
         data: { "whichFunction":"getUserOrders"},
         dataType: "JSON",
@@ -37,7 +37,7 @@ $(".navbar").css("marginRight","200px");
        $(".deleteOrder").click(function(){
            let thisButton = this;
             $.ajax({
-                url: "orderS/localController.php",
+                url: "../Controller/localController.php",
                 type: 'POST',
                 data: { "whichFunction":"deleteOrder","order_id":$(this).data("id")},
                 dataType: "JSON",

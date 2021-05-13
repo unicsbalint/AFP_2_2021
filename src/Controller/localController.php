@@ -29,7 +29,7 @@ switch($_POST['whichFunction'])
 
 
 function getAllData(){
-    require_once "../../Controller/OrderController.php";
+    require_once "OrderController.php";
     $oc = new OrderController();
     $data = [];
     $data["tipusok"] = $oc->getTypes();
@@ -37,7 +37,7 @@ function getAllData(){
     $data["extrak"] = $oc->getExtras();
 
     if($_POST['getUser']){
-        require_once "../../Controller/LoginController.php";
+        require_once "LoginController.php";
         $lc = new LoginController();
         $data["isUserLoggedIn"] = $lc->isUserLoggedIn();
     }
@@ -46,20 +46,20 @@ function getAllData(){
 
 function insertOrder($data){
     $data["user_id"] = $_SESSION["user_id"];
-    require_once "../../Controller/OrderController.php";
+    require_once "OrderController.php";
     $oc = new OrderController();
     return $oc->insertOrder($data);
 }
 
 function insertOrderIfNotRegistered($data){
     $data["user_id"] = "";
-    require_once "../../Controller/OrderController.php";
+    require_once "OrderController.php";
     $oc = new OrderController();
     return $oc->insertOrder($data);
 }
 
 function getUserOrders(){
-require_once "../../Controller/DbController.php";
+require_once "DbController.php";
 $dbfunctions=new DbController;
 $connection=$dbfunctions->connectToDatabase();
 
@@ -86,7 +86,7 @@ return $orders;
 }
 
 function deleteOrder($order_id){
-require_once "../../Controller/DbController.php";
+require_once "DbController.php";
 $dbfunctions=new DbController;
 $connection=$dbfunctions->connectToDatabase();
 $result=$dbfunctions->executeDML("
@@ -97,7 +97,7 @@ return $result;
 }
 
 function inserNotRegisteredUser($data){
-    require_once "../../Controller/DbController.php";
+    require_once "DbController.php";
     $dbfunctions = new DbController;
     $connection = $dbfunctions->connectToDatabase();
     $insertedUser = $data;

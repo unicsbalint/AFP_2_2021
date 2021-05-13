@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     let isUserLoggedIn = false;
     $.ajax({
-        url: "localController.php",
+        url: "../../Controller/localController.php",
         type: 'POST',
         data: { "whichFunction":"getAllData", "getUser":true},
         dataType: "JSON",
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     });
 
-    $("#order3Btn").click(function(){
+    $("#orderXBtn").click(function(){
 
         if(!isUserLoggedIn){
             var modal = document.getElementById("myModal");
@@ -49,12 +49,12 @@ $(document).ready(function(){
             return;
         }
         $.ajax({
-            url: "localController.php",
+            url: "../../Controller/localController.php",
             type: 'POST',
             data: { "whichFunction":"insertOrder",
                 "extras":$("#extraPicker").val(),
                 "colors":$("#colorPicker").val(),
-                "models": 1,
+                "models": 3,
                 "description":$("#description").val()
             },
             success: function(response) {

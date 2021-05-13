@@ -50,7 +50,7 @@
             <div class="row align-items-end">
                 <div class="col m-4">
                     <textarea id="description" placeholder="Any special request for your order?"></textarea>
-                    <a id="orderBtn" class="btn btn-primary btn-large">Order</a>
+                    <a id="orderXBtn" class="btn btn-primary btn-large">Order</a>
                 </div>
             </div>
 

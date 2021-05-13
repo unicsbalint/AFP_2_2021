@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let isUserLoggedIn = false;
     $.ajax({
-        url: "localController.php",
+        url: "../../Controller/localController.php",
         type: 'POST',
         data: { "whichFunction": "getAllData", "getUser": true },
         dataType: "JSON",
@@ -46,7 +46,7 @@ $(document).ready(function() {
                 }
             }
             $.ajax({
-                url: "localController.php",
+                url: "../../Controller/localController.php",
                 type: 'POST',
                 data: { "whichFunction": "getAllData", "getUser": false },
                 dataType: "JSON",
@@ -80,7 +80,7 @@ $(document).ready(function() {
         };
 
         $.ajax({
-            url: "localController.php",
+            url: "../../Controller/localController.php",
             type: 'POST',
             data: {
                 "whichFunction": "insertOrder",
@@ -110,7 +110,7 @@ $(document).ready(function() {
 
     $("#orderBtn").click(function() {
         $.ajax({
-            url: "localController.php",
+            url: "../../Controller/localController.php",
             type: 'POST',
             data: {
                 "whichFunction": "insertOrderIfNotRegistered",
@@ -129,7 +129,7 @@ $(document).ready(function() {
         })
 
         $.ajax({
-            url: "localController.php",
+            url: "../../Controller/localController.php",
             type: 'POST',
             data: {
                 "whichFunction": "inserNotRegisteredUser",
