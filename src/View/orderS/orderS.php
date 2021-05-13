@@ -58,24 +58,54 @@
             <span class="close" id="close">&times;</span>
 
               <div class="modal-content" id="changeableDiv">
-                <form action="">
-            <div class="userDetails">
-                <label for="userDetails">Vásárló adatok</label><br>
-                <input type="text" placeholder="Név">
-                <input type="text" placeholder="E-mail">
-                <input typy="text" placeholder="Cím">
+                <form action="" class="container">
+                    <h1 class="py-3">Checkout</h1>
+                <div class="userDetails row">
+                
+                <div class="row w-100">
+                    <label for="nev" class="col px-4">Name: </label>
+                    <input type="text" placeholder="Név" class="col"> 
+                </div>
+
+                <div class="row w-100">
+                    <label for="email" class="col px-4">Email: </label>
+                    <input type="text" placeholder="E-mail"class="col">
+                </div>
+
+                <div class="row w-100">
+                    <label for="cim" class="col px-4">Address: </label>
+                    <input typy="text" placeholder="Cím"class="col">
+                </div>
             </div>
 
-            <div class="carDetails">
-                <label for="carDetails">Termék adatok</label><br>
-                <input type="text" placeholder="Szín" id="colorCheckout" name="color" value="">
-                <input type="text" placeholder="Model" id="modelCheckout" name="model">
-                <input type="text" placeholder="Extra" id="extraCheckout" name="extra">
-                <input type="text" placeholder="Leírás" id="descriptionCheckout" name="description">
+            <div class="carDetails row my-4 ">
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Model: </label>
+                    <p id="modelCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Colour: </label>
+                    <p id="colorCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Extra: </label>
+                    <p id="extraCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Description: </label>
+                    <p id="descriptionCheckout" value="" class="col"></p>
+                </div>
             </div>
+            <div>
                 <button type="button" class="btn btn-primary btn-large">Checkout</button>
             </div>
         </div>
+        </div>
+        </div>
+
 
         <div class="col-md-4 ml">
             <div>
@@ -89,4 +119,5 @@
 include_once "../footer.php"
 ?>
 </body>
+
 </html>
