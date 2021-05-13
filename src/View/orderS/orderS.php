@@ -50,21 +50,66 @@
             <div class="row align-items-end">
                 <div class="col m-4">
                         <textarea id="description" placeholder="Any special request for your order?"></textarea>
-                        <a id="orderBtn" class="btn btn-primary btn-large">Order</a>
+                        <a id="checkoutBtn" class="btn btn-primary btn-large">Order</a>
                 </div>
             </div>
 
             <div id="myModal" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Please <a href="/tesla/src/view/login.php">sign in</a> in order to fulfill your order</p>
+            <span class="close" id="close">&times;</span>
+
+              <div class="modal-content" id="changeableDiv">
+                <form action="" class="container">
+                    <h1 class="py-3">Checkout</h1>
+                <div class="userDetails row">
+                
+                <div class="row w-100">
+                    <label for="nev" class="col px-4">Name: </label>
+                    <input type="text" placeholder="Név" class="col" id="nameId"> 
+                </div>
+
+                <div class="row w-100">
+                    <label for="email" class="col px-4">Email: </label>
+                    <input type="text" placeholder="E-mail"class="col" id="email">
+                </div>
+
+                <div class="row w-100">
+                    <label for="cim" class="col px-4">Address: </label>
+                    <input typy="text" placeholder="Cím"class="col"id="addressId">
                 </div>
             </div>
+
+            <div class="carDetails row my-4 ">
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Model: </label>
+                    <p id="modelCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Colour: </label>
+                    <p id="colorCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Extra: </label>
+                    <p id="extraCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Description: </label>
+                    <p id="descriptionCheckout" value="" class="col"></p>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-large" id="orderBtn">Checkout and order</button>
+            </div>
         </div>
+        </div>
+        </div>
+
 
         <div class="col-md-4 ml">
             <div>
-                <img src="../images/homepage/models_red.jpg" alt="Model s red" width="750px" height="500px">
+                <img class="img-fluid" src="../images/homepage/models_red.jpg" alt="Model s red" width="750px" height="500px">
             </div>
         </div>
     </div>
@@ -74,4 +119,5 @@
 include_once "../footer.php"
 ?>
 </body>
+
 </html>

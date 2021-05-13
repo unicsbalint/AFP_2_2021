@@ -9,11 +9,17 @@ switch($_POST['whichFunction'])
     case "insertOrder":        
         echo insertOrder($_POST);   
         break;
+    case "inserNotRegisteredUser":
+        echo inserNotRegisteredUser($_POST);
+        break;
     case "getUserOrders":         
         echo json_encode(getUserOrders());
         break;
     case "deleteOrder":         
         echo deleteOrder($_POST["order_id"]);
+        break;
+    case "insertOrderIfNotRegistered":
+        echo insertOrderIfNotRegistered($_POST);
         break;
     default:
 
@@ -40,6 +46,13 @@ function getAllData(){
 
 function insertOrder($data){
     $data["user_id"] = $_SESSION["user_id"];
+    require_once "../../Controller/OrderController.php";
+    $oc = new OrderController();
+    return $oc->insertOrder($data);
+}
+
+function insertOrderIfNotRegistered($data){
+    $data["user_id"] = "";
     require_once "../../Controller/OrderController.php";
     $oc = new OrderController();
     return $oc->insertOrder($data);
@@ -81,6 +94,24 @@ DELETE FROM orders WHERE id = {$order_id}
 ", 
 $connection);
 return $result;
+}
+
+function inserNotRegisteredUser($data){
+    require_once "../../Controller/DbController.php";
+    $dbfunctions = new DbController;
+    $connection = $dbfunctions->connectToDatabase();
+    $insertedUser = $data;
+  
+    try{
+        $newUser = $dbfunctions->executeDML("
+        INSERT INTO `user`( `name`, `email`, `address`)
+        VALUES ('{$insertedUser["name"]}','{$insertedUser["email"]}','{$insertedUser["address"]}')", 
+        $connection);
+
+    }catch (Exception $e){
+        throw new Exception($e->getMessage());
+    }
+    return $newUser;
 }
 
 
