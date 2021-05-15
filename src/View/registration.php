@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     }
     if(!$error){
             $registerController->insertUser($postData['name'],$postData['email'],$postData['address'],$postData['password']);
-            header('Location: index.php');      
+
     }
         
 }
@@ -68,3 +68,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
     </main>
 
 </div>
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['token'])){
+    $token=$_GET['token'];
+
+   if($registerController->checkTokenUserActivate($token)){
+      echo "Registration succesfully!";
+   }
+
+}

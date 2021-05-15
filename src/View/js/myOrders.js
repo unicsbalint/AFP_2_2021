@@ -6,8 +6,7 @@ $(".navbar").css("marginRight","200px");
         data: { "whichFunction":"getUserOrders"},
         dataType: "JSON",
         async: false,
-        success: function(response) { 
-            console.log(response);
+        success: function(response) {
             let table = `<table style="" class="table table-striped">`;
                 table += `<thead>`
                 table += `<tr>`
@@ -19,7 +18,7 @@ $(".navbar").css("marginRight","200px");
                 table +=  `<th scope="col"></th>`
                 table += `</tr>`
                 table += `</thead>`
-            response.forEach(function(element){
+                response.forEach(function(element){
                 table += `<tr>`;
                 table += `<td>${element["name"]}</td>`;
                 table += `<td>${element["model"]}</td>`;  
@@ -52,3 +51,4 @@ $(".navbar").css("marginRight","200px");
         });
 
 });
+
