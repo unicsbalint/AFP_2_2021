@@ -5,7 +5,7 @@ use PHPMailer\PHPMailer\SMTP;
 
 class RegisterController
 {
-    function insertUser($username, $email, $address, $password)
+    function insertUser($username, $email, $address, $password, $vatNum, $phoneNum, $postAddress, $postName, $postPhoneNum)
     {
         require_once "DbController.php";
         $dbfunctions = DbController::getInstance();
@@ -15,8 +15,8 @@ class RegisterController
         try {
             $token=base64_encode($email);
             $newUser = $dbfunctions->executeDML("
-            INSERT INTO `user`( `name`, `email`, `address`, `password`,`token`)
-            VALUES ('$username','$email','$address','$password','$token')",
+            INSERT INTO `user`( `name`, `email`, `address`, `password`,`token`, `phone_number`, `vat_number`, `post_address`, `post_name`, `post_phone_number`)
+            VALUES ('$username','$email','$address','$password','$token', '$phoneNum', '$vatNum', '$postAddress', '$postName', '$postPhoneNum')",
                 $connection);
 
         } catch (Exception $e) {
