@@ -47,13 +47,17 @@
                 </div>
             </div>
 
-            <div class="row align-items-end">
+            <div class="row align-items-center">
                 <div class="col m-4">
-                        <textarea id="description" placeholder="Any special request for your order?"></textarea>
-                        <a id="checkoutBtn" class="btn btn-primary btn-large">Order</a>
+                <textarea id="description" placeholder="Any special request for your order?"></textarea>
                 </div>
             </div>
-
+            <div class="row align-items-end">
+                <div class="col m-4">               
+                    <a id="orderXBtn" class="btn btn-primary btn-large">Order</a>
+                </div>
+            </div>
+            
             <div id="myModal" class="modal">
             <span class="close" id="close">&times;</span>
 
