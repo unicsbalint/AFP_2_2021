@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2021. Máj 05. 22:50
+-- Létrehozás ideje: 2021. Máj 15. 16:06
 -- Kiszolgáló verziója: 10.4.17-MariaDB
--- PHP verzió: 7.3.26
+-- PHP verzió: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,14 @@ CREATE TABLE `car` (
 --
 
 INSERT INTO `car` (`id_car`, `id_extra`, `id_color`, `id_model`) VALUES
-(1, 3, 3, 1);
+(1, 3, 3, 1),
+(3, 1, 1, 1),
+(4, 3, 2, 1),
+(5, 3, 4, 1),
+(6, 3, 3, 1),
+(7, 4, 3, 4),
+(8, 3, 4, 1),
+(9, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -119,7 +126,7 @@ INSERT INTO `interior` (`id`, `type`, `color`) VALUES
 --
 
 CREATE TABLE `model` (
-  `id_model` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `model_name` varchar(255) NOT NULL,
   `model_price` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -128,7 +135,7 @@ CREATE TABLE `model` (
 -- A tábla adatainak kiíratása `model`
 --
 
-INSERT INTO `model` (`id_model`, `model_name`, `model_price`) VALUES
+INSERT INTO `model` (`id`, `model_name`, `model_price`) VALUES
 (1, 'Model S', '50000'),
 (2, 'Model 3', '35000'),
 (3, 'Model X', '55000'),
@@ -152,7 +159,10 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`id`, `description`, `user_id`, `car_id`) VALUES
-(2, '', 15, 1);
+(2, '', 15, 1),
+(3, 'asd', 16, 3),
+(7, 'asdasqweqweqwe', 16, 7),
+(9, '', 49, 9);
 
 -- --------------------------------------------------------
 
@@ -165,15 +175,23 @@ CREATE TABLE `user` (
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL
+  `password` varchar(255) NOT NULL,
+  `phone_number` varchar(84) DEFAULT NULL,
+  `vat_number` varchar(11) DEFAULT NULL,
+  `post_address` varchar(84) DEFAULT NULL,
+  `post_name` varchar(84) DEFAULT NULL,
+  `post_phone_number` varchar(84) DEFAULT NULL,
+  `token` varchar(20) NOT NULL,
+  `is_verify` int(2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- A tábla adatainak kiíratása `user`
 --
 
-INSERT INTO `user` (`id_user`, `name`, `email`, `address`, `password`) VALUES
-(15, 'Cserneczky Bálint', 'cserneczkybalint@gmail.com', 'Hatvan Rákóczi út 8.', 'b30854c7c4c3e2abf1230da7a56a29fb23995871');
+INSERT INTO `user` (`id_user`, `name`, `email`, `address`, `password`, `phone_number`, `vat_number`, `post_address`, `post_name`, `post_phone_number`, `token`, `is_verify`) VALUES
+(15, 'Cserneczky Bálint', 'cserneczkybalint@gmail.com', 'Hatvan Rákóczi út 8.', 'b30854c7c4c3e2abf1230da7a56a29fb23995871', '304502145', '444444444', NULL, NULL, NULL, '', NULL),
+(49, 'Teszt Elek', 'hollomark1996@gmail.com', 'Fogarasi út 43/C', '7c4a8d09ca3762af61e59520943dc26494f8941b', '304502145', '15645489', 'Fogarasi út 43/C', 'fsdfdsf', '304502145', 'aG9sbG9tYXJrMTk5NkBn', NULL);
 
 --
 -- Indexek a kiírt táblákhoz
@@ -207,7 +225,7 @@ ALTER TABLE `interior`
 -- A tábla indexei `model`
 --
 ALTER TABLE `model`
-  ADD PRIMARY KEY (`id_model`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- A tábla indexei `orders`
@@ -230,7 +248,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT a táblához `car`
 --
 ALTER TABLE `car`
-  MODIFY `id_car` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_car` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT a táblához `color`
@@ -254,19 +272,19 @@ ALTER TABLE `interior`
 -- AUTO_INCREMENT a táblához `model`
 --
 ALTER TABLE `model`
-  MODIFY `id_model` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT a táblához `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT a táblához `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

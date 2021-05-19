@@ -3,7 +3,7 @@ class OrderController{
 
     function getTypes(){
         require_once "DbController.php";
-        $dbfunctions=new DbController;
+        $dbfunctions=DbController::getInstance();
         $connection=$dbfunctions->connectToDatabase();
         $selectedColors=$dbfunctions->getList("SELECT * FROM `model`");
         return $selectedColors;
@@ -11,7 +11,7 @@ class OrderController{
 
     function getColor(){
         require_once "DbController.php";
-        $dbfunctions=new DbController;
+        $dbfunctions=DbController::getInstance();
         $connection=$dbfunctions->connectToDatabase();
         $selectedTypes=$dbfunctions->getList("SELECT * FROM `color` WHERE 1 ");
         return $selectedTypes;
@@ -19,7 +19,7 @@ class OrderController{
     
     function getExtras(){
         require_once "DbController.php";
-        $dbfunctions=new DbController;
+        $dbfunctions=DbController::getInstance();
         $connection=$dbfunctions->connectToDatabase();
         $selectedTypes=$dbfunctions->getList("SELECT * FROM `extra` WHERE 1 ");
         return $selectedTypes;
@@ -29,7 +29,7 @@ class OrderController{
             $orderedCar = $params;
 
             require_once "DbController.php";
-            $dbfunctions = new DbController;
+            $dbfunctions = DbController::getInstance();
             $connection = $dbfunctions->connectToDatabase();
           try{
               $insertedCar = $dbfunctions->executeDML("INSERT INTO `car`( `id_extra`, `id_color`, `id_model`)

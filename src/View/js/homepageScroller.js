@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  if(window.location.pathname === '/tesla/src/view/index.php' || window.location.pathname === '/tesla/src/view/'){
+  if(window.location.pathname === '/tesla/PHPMailer/view/index.php' || window.location.pathname === '/tesla/PHPMailer/view/'){
     let modelNav = `
     <a class="modelTexts" id="modelS">MODEL S</a>
     <a class="modelTexts" id="model3">MODEL 3</a>

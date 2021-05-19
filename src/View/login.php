@@ -9,12 +9,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['loginSubmit'])) {
     'password' => $_POST['userPassword']
   ];
 
-  $lgController = new LoginController;
+  $lgController = LoginController::getInstance();
 
   if (empty($postData['email']) || empty($postData['password'])) {
     echo "<script>alert('Missing details!');</script>";
   } else if (!$lgController->UserLogin($postData['email'], $postData['password'])) {
     echo "<script>alert('Wrong user details!');</script>";
+  } else if ($lgController->UserLogin($postData['email'], $postData['password'])=="activate") {
+      echo "<script>alert('You have to activate your account.');</script>";
   }
 
   $postData['password'] = "";
@@ -28,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['loginSubmit'])) {
     justify-content: center;
     height: 100%;">
 
-<div style="padding: 10; background-color: light">
+<div style="padding: 10px;">
 <form method="post">
   <div class="form-group">
     <label for="userEmail">Email address</label>

@@ -21,6 +21,15 @@ switch($_POST['whichFunction'])
     case "insertOrderIfNotRegistered":
         echo insertOrderIfNotRegistered($_POST);
         break;
+    case "getUserDatas":
+        echo json_encode(getUserByEmail($_POST["email"]));
+        break;
+    case "saveOrder":
+        echo json_encode(saveOrder($_POST["data"]));
+        break;
+        case "updateProfile":
+        echo json_encode(updateProfile($_POST["data"],$_POST["user_id"]));
+        break;
     default:
 
     break;
@@ -38,7 +47,7 @@ function getAllData(){
 
     if($_POST['getUser']){
         require_once "LoginController.php";
-        $lc = new LoginController();
+        $lc = LoginController::getInstance();
         $data["isUserLoggedIn"] = $lc->isUserLoggedIn();
     }
     return $data;
@@ -60,7 +69,7 @@ function insertOrderIfNotRegistered($data){
 
 function getUserOrders(){
 require_once "DbController.php";
-$dbfunctions=new DbController;
+$dbfunctions=DbController::getInstance();
 $connection=$dbfunctions->connectToDatabase();
 
 $sql = "SELECT orders.id as order_id, user.name, 
@@ -78,8 +87,8 @@ AND user.id_user = {$_SESSION["user_id"]}
 AND orders.user_id = orders.user_id
 AND orders.car_id = car.id_car
 AND car.id_extra = extra._id
-AND model.id_model = car.id_model";
-//var_dump($sql); die();
+AND model.id = car.id_model";
+
 
 $orders=$dbfunctions->getList($sql);
 return $orders;
@@ -87,7 +96,7 @@ return $orders;
 
 function deleteOrder($order_id){
 require_once "DbController.php";
-$dbfunctions=new DbController;
+$dbfunctions=DbController::getInstance();
 $connection=$dbfunctions->connectToDatabase();
 $result=$dbfunctions->executeDML("
 DELETE FROM orders WHERE id = {$order_id}
@@ -98,7 +107,7 @@ return $result;
 
 function inserNotRegisteredUser($data){
     require_once "DbController.php";
-    $dbfunctions = new DbController;
+    $dbfunctions = DbController::getInstance();
     $connection = $dbfunctions->connectToDatabase();
     $insertedUser = $data;
   
@@ -114,7 +123,53 @@ function inserNotRegisteredUser($data){
     return $newUser;
 }
 
+function saveOrder($html){
+    require_once "DbController.php";
+    require_once "../Controller/RegisterController.php";
+    $sendMail=new RegisterController();
 
+    $dbfunctions = DbController::getInstance();
+    $connection = $dbfunctions->connectToDatabase();
+    if (isset($html) && !is_null($html) && $html!==""){
+        try {
+
+            $sendMail
+                ->sendMail($_SESSION["email"],$_SESSION["name"],1,null,$html);
+        }catch (Exception $e){
+
+        }
+        return $sendMail;
+    }
+}
+
+ function getUserByEmail($email){
+    require_once "DbController.php";
+     $dbfunctions = DbController::getInstance();
+     $connection = $dbfunctions->connectToDatabase();
+    $query = "SELECT * FROM user WHERE email = '{$email}'";
+    $record = $dbfunctions->getRecord($query);
+
+    return $record;
+}
+ function updateProfile($datas, $id){
+    require_once "DbController.php";
+    $dbfunctions=DbController::getInstance();
+    $connection=$dbfunctions->connectToDatabase();
+    $sql="UPDATE `user` SET 
+                `name`='{$datas["name"]}',
+                `email`='{$datas["email"]}',
+                `address`='{$datas["address"]}',
+                  `phone_number`='{$datas["phone_num"]}',
+                  `vat_number`='{$datas["vat_num"]}',
+                  `post_name`='{$datas["post_name"]}',
+                  `post_address`='{$datas["post_address"]}',
+                  `post_phone_number`='{$datas["post_phone_number"]}'
+                WHERE `id_user`={$id}";
+
+    $updatedUser=$dbfunctions->executeDML($sql,$connection);
+
+    return $updatedUser;
+}
 
 
 

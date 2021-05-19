@@ -1,13 +1,43 @@
 <?php
+
+
 class DbController
 {
-    function connectToDatabase(){
-        $connection = new PDO('mysql:host=localhost;dbname=tesla;','root','');
-        $connection->exec("SET NAMES 'utf8'");
-        return $connection;
+    private static $instance = null;
+    private $conn;
+
+
+    private function __construct()
+    {
+        require_once "../../DotEnv.php";
+        (new DotEnv( '../../.env'))->load();
+        $this->conn = new PDO(
+            $_ENV['DATABASE_DNS'],
+            $_ENV['DATABASE_USER'],
+            $_ENV['DATABASE_PASSWORD'],
+            array(
+                PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"
+            ));
     }
 
-    function getRecord($queryString, $queryParams = []){
+    public static function getInstance()
+    {
+        if (!self::$instance) {
+            self::$instance = new DbController();
+        }
+
+        return self::$instance;
+    }
+
+    public function connectToDatabase()
+    {
+        return $this->conn;
+    }
+
+
+    function getRecord($queryString, $queryParams = [])
+    {
+
         $connection = $this->connectToDatabase();
         $statement = $connection->prepare($queryString);
         $success = $statement->execute($queryParams);
@@ -17,7 +47,8 @@ class DbController
         return $result;
     }
 
-    function getList($queryString, $queryParams = []) {
+    function getList($queryString, $queryParams = [])
+    {
         $connection = $this->connectToDatabase();
         $statement = $connection->prepare($queryString);
         $success = $statement->execute($queryParams);
@@ -27,7 +58,8 @@ class DbController
         return $result;
     }
 
-    function executeDML($queryString, $connection, $queryParams = []){
+    function executeDML($queryString, $connection, $queryParams = [])
+    {
 
         $statement = $connection->prepare($queryString);
         $success = $statement->execute($queryParams);
