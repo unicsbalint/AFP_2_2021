@@ -47,12 +47,17 @@
                 </div>
             </div>
 
-            <div class="row align-items-end">
+            <div class="row align-items-center">
                 <div class="col m-4">
-                    <textarea id="description" placeholder="Any special request for your order?"></textarea>
-                    <a id="orderBtn" class="btn btn-primary btn-large">Order</a>
+                <textarea id="description" placeholder="Any special request for your order?"></textarea>
                 </div>
             </div>
+            <div class="row align-items-end">
+                <div class="col m-4">               
+                    <a id="orderXBtn" class="btn btn-primary btn-large">Order</a>
+                </div>
+            </div>
+
 
             <div id="myModal" class="modal">
                 <div class="modal-content">
@@ -64,7 +69,7 @@
 
         <div class="col-md-4 ml">
             <div>
-                <img src="../images/homepage/model_y.jpg" alt="Model s red" width="750px" height="500px">
+                <img src="../images/homepage/model_y.png" alt="Model s red">
             </div>
         </div>
     </div>

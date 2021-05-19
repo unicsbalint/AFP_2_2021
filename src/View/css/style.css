@@ -14,7 +14,6 @@ body, html {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-
 }
 .modelTexts {
   color: #000000;
@@ -177,3 +176,21 @@ text-decoration: none;
   margin-bottom: 33%;
 }
 
+
+.backToHomeBtn{
+  display: none;
+  padding: 5px;
+  background-color:rgba(253, 253, 253, 0.144);
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+  position: sticky;
+  float: right;
+  bottom:10%;
+  right: 10%;    
+  text-align: center;
+  vertical-align: center;
+}

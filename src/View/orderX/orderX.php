@@ -46,10 +46,13 @@
                     <div id="packageDiv">Packages</div>
                 </div>
             </div>
-
-            <div class="row align-items-end">
+            <div class="row align-items-center">
                 <div class="col m-4">
-                    <textarea id="description" placeholder="Any special request for your order?"></textarea>
+                <textarea id="description" placeholder="Any special request for your order?"></textarea>
+                </div>
+            </div>
+            <div class="row align-items-end">
+                <div class="col m-4">               
                     <a id="orderXBtn" class="btn btn-primary btn-large">Order</a>
                 </div>
             </div>
@@ -64,7 +67,7 @@
 
         <div class="col-md-4 ml">
             <div>
-                <img src="../images/homepage/model_x.jpg" alt="Model s red" width="750px" height="500px">
+                <img src="../images/homepage/model_x.png" alt="Model x">
             </div>
         </div>
     </div>

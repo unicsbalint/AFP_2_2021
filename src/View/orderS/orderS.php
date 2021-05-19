@@ -109,7 +109,7 @@
 
         <div class="col-md-4 ml">
             <div>
-                <img class="img-fluid" src="../images/homepage/models_red.jpg" alt="Model s red" width="750px" height="500px">
+                <img class="img-fluid" src="../images/homepage/models_red.png" alt="Model s red">
             </div>
         </div>
     </div>

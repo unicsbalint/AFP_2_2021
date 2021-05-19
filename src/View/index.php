@@ -25,6 +25,7 @@ include "nav.php";
       <div style="display:none" id="modelYText">MODEL Y</div>
       <a href="orderY/orderY.php" style="display:none" id="orderY">Check it out</a>
     </div>
+    <div style="text-align: center;" class="backToHomeBtn"><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
 <?php 
 include "footer.php";
 ?>
