@@ -37,7 +37,7 @@ $lgController = LoginController::getInstance();
         <div class="form-controll" id="userForm">
 
         </div>
-        <button type="button" name="submit" id="updateProf" class="btn btn-info">Save profile</button>
+        <button type="button" name="submit" id="updateProf" class="btn btn-info">Mentés</button>
     </form>
 
     <?php  endif; ?>
