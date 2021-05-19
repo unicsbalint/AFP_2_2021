@@ -177,3 +177,18 @@ text-decoration: none;
   margin-bottom: 33%;
 }
 
+
+.backToHomeBtn{
+  /* display: none; */
+  padding: 5px;
+  background-color:rgba(253, 253, 253, 0.144);
+  border-radius: 4px;
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-weight: bold;
+  position: sticky;
+  float: right;
+  bottom:10%;
+  right: 10%;    
+}
