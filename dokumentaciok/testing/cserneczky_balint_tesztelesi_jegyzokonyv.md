@@ -35,3 +35,22 @@
 | **My Profile page** | Csak akkor jelenjenek meg az extra adatok, ha a checkbox be van pipálva | A várt működésnek megfelelő eredmény. | - |
 
 
+**Böngésző: Opera **
+
+| **Tesztelendő elem** | **Elvárt működés** | **Eredmény** | **Megjegyzés** |
+| --- | --- | --- | --- |
+| **Navbar** | Ha a navbar elemeire ráviszem az egeret, egyértelműen jeleznie kell, hogy az adott elem van kiválasztva (pointer kurzor) | A várt működésnek megfelelő eredmény. | - |
+| **Navbar** | Az oldal méretezése esetén is az összes hivatkozás látható maradjon | A várt működésnek megfelelő eredmény. | - |
+| **Navbar** | A "Sandwich" menü az összes opciót felajánlja, és azok működjenek is | A várt működésnek megfelelő eredmény. | - |
+| **Homepage** | A homepagen a hivatkozásokra kattintva a megfelelő modell borítsa a kijelzőt (pontosan) | A várt működésnek megfelelő eredmény. | - |
+| **Homepage** | A Check it out gombok a megfelelő modellhez vezessenek | A várt működésnek megfelelő eredmény. | - |
+| **Homepage** | Reszoponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | A nav nézhetne ki jobban |
+| **Homepage** | A back to top gomb megjelenik ha az oldalon elkezdünk legörgetni, vagy a nav egyik gombjára rákattintunk | A várt működésnek megfelelő eredmény. | - |
+| **Homepage** | A back to top gomb felvisz az oldal tetejére | A várt működésnek megfelelő eredmény. | - |
+| **My Orders page** | Reszoponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | - |
+| **My Orders page** | Megfelelő opacity, olvasható szövegek | A várt működésnek megfelelő eredmény. | - |
+| **My Profile page** | Reszoponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | - |
+| **My Profile page** | Megfelelő opacity, olvasható szövegek | A várt működésnek megfelelő eredmény. | - |
+| **My Profile page** | Csak akkor jelenjenek meg az extra adatok, ha a checkbox be van pipálva | A várt működésnek megfelelő eredmény. | - |
+
+
