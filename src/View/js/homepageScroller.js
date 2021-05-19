@@ -25,13 +25,19 @@ $(document).ready(function(){
         },500);       
     });
 
-    
+
+    $(".backToHomeBtn").click(function() {
+      $('html, body').animate({      
+        scrollTop: ($('body').offset().top)
+    },500);   
+    })
 
     //Ha eléri a Model S szekciót betölti (fadeli) az domokat azon a részen.
     $(window).on("scroll", function(){
         if($("html").scrollTop() >= $('#homepage-S').offset().top){
           $("#modelSText").fadeIn(1000);
           $("#orderS").fadeIn(1000);
+          $(".backToHomeBtn").show();
         }
       });
 
