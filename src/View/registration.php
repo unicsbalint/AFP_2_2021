@@ -12,11 +12,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
         'address' => $_POST['address'],
         'password' => $_POST['password'],
         'password1' => $_POST['re-password'],
-        'phone_number' => $_POST['phone-number'],
-        'vat_number' => $_POST['vat-number'],
-        'post_address' => $_POST['post-address'],
-        'post_name' => $_POST['post-name'],
-        'post_phone_number' => $_POST['post-phone-number']
+        'phone_number' => $_POST['phone-number']
+        // 'vat_number' => $_POST['vat-number'],
+        // 'post_address' => $_POST['post-address'],
+        // 'post_name' => $_POST['post-name'],
+        // 'post_phone_number' => $_POST['post-phone-number']
     ];
     $error = false;
     if (empty($postData['name']) || empty($postData['email']) || empty($postData['password']) || empty($postData['password1']) || empty($postData['address'])) {
@@ -42,10 +42,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
                                             $postData['address'],
                                             $postData['password'],
                                             $postData['phone_number'],
-                                            $postData['vat_number'],
-                                            $postData['post_address'],
-                                            $postData['post_name'],
-                                            $postData['post_phone_number']);
+                                            "","","",""
+                                            // $postData['vat_number'],
+                                            // $postData['post_address'],
+                                            // $postData['post_name'],
+                                            // $postData['post_phone_number']
+                                            );
 
     }
         
@@ -74,6 +76,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             <label id="icon">Password again:</label>
             <input type="password" name="re-password" id="re-password" placeholder="Password again" required/>
 
+            <label id="icon">Phone number:</label>
+            <input type="text" name="phone-number" id="phone-number" placeholder="Phone number" required/>
+<!-- 
             <label id="icon">Vat number:</label>
             <input type="text" name="vat-number" id="vat-number" placeholder="Vat number" required/>
 
@@ -87,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['register'])) {
             <input type="text" name="post-name" id="post-name" placeholder="Post name" required/>
 
             <label id="icon">Post phone number:</label>
-            <input type="text" name="post-phone-number" id="post-phone-number" placeholder="Post phone number" required/>
+            <input type="text" name="post-phone-number" id="post-phone-number" placeholder="Post phone number" required/> -->
 
             <button type="submit" name="register">Submit</button>
 

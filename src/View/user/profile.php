@@ -1,11 +1,11 @@
 <?php
 require_once "../../View/header.php";
 require_once "../../Controller/LoginController.php";
-require_once "../../Controller/UserController.php";
+//require_once "../../Controller/UserController.php";
 
 
 $lgController = LoginController::getInstance();
-$updateHandler = new UserController();
+//$updateHandler = new UserController();
 
 
 ?>
@@ -89,7 +89,6 @@ $updateHandler = new UserController();
 
     $("#updateProf").click(function (e) {
 
-        /// fucking hardcode 'couse kurva az anyja :-)
         const name=$("#name").val();
         const email=$("#email").val();
         const address=$("#address").val();
