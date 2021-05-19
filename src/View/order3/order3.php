@@ -24,41 +24,99 @@
 
 
 <section class="bgimage">
-    <div id="heroText">THE MODEL 3</div>
+<div id="heroText">THE MODEL 3</div>
 </section>
 
-<div>Description about MODEL 3</div>
 
-<div style="width: 500px; background-color: rgba(255, 255, 255, 0.411);">
-    Pick an astonishing color for your new MODEL 3
-    <div id="colorDiv">Color</div>
-</div>
+<div class="album p-5 mx-5 bg-light">
+    <div class="row justify-content around">
+        <div class="col-md-4">
+            <div class="col-m-4"><h2>Description about MODEL 3</h2></div>
+            <div class="row align-items-start">
+                <div class="col m-4" style="width: 500px; background-color: rgba(255, 255, 255, 0.411);">
+                    Pick an astonishing color for your new MODEL 3
+                    <div id="colorDiv">Color</div>
+                </div>
+            </div>
 
-<div>
-    Choose from a wide selection of package for your new car
-    <br> (choose one, and you will see what it contains)
-    <div id="packageDiv">Packages</div>
-</div>
+            <div class="row align-items-center">
+                <div class="col m-4">
+                    Choose from a wide selection of package for your new car
+                    <br> (choose one, and you will see what it contains)
+                    <div id="packageDiv">Packages</div>
+                </div>
+            </div>
 
-<textarea id="description" placeholder="Any special request for your order?"></textarea>
+            <div class="row align-items-center">
+                <div class="col m-4">
+                <textarea id="description" placeholder="Any special request for your order?"></textarea>
+                </div>
+            </div>
+            <div class="row align-items-end">
+                <div class="col m-4">               
+                    <a id="order3Btn" class="btn btn-primary btn-large">Order</a>
+                </div>
+            </div>
+            
+            <div id="myModal" class="modal">
+            <span class="close" id="close">&times;</span>
 
-<a id="order3Btn" class="btn btn-primary btn-large">Order</a>
+              <div class="modal-content" id="changeableDiv">
+                <form action="" class="container">
+                    <h1 class="py-3">Checkout</h1>
+                <div class="userDetails row">
+                
+                <div class="row w-100">
+                    <label for="nev" class="col px-4">Name: </label>
+                    <input type="text" placeholder="Név" class="col" id="nameId"> 
+                </div>
 
-<div id="myModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Please <a href="/tesla/src/view/login.php">sign in</a> in order to fulfill your order</p>
-    </div>
+                <div class="row w-100">
+                    <label for="email" class="col px-4">Email: </label>
+                    <input type="text" placeholder="E-mail"class="col" id="email">
+                </div>
 
-</div>
-</div>
+                <div class="row w-100">
+                    <label for="cim" class="col px-4">Address: </label>
+                    <input typy="text" placeholder="Cím"class="col"id="addressId">
+                </div>
+            </div>
+
+            <div class="carDetails row my-4 ">
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Model: </label>
+                    <p id="modelCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Colour: </label>
+                    <p id="colorCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Extra: </label>
+                    <p id="extraCheckout" value="" class="col"></p>
+                </div>
+
+                <div class="row w-100">
+                    <label type="text" class="col px-4">Description: </label>
+                    <p id="descriptionCheckout" value="" class="col"></p>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary btn-large" id="orderBtn">Checkout and order</button>
+            </div>
+        </div>
+        </div>
+        </div>
+
 
         <div class="col-md-4 ml">
-                <div>
-                        <img src="../images/homepage/model_3.jpg" alt="Model s red" width="750px" height="500px">
-                </div>
+            <div>
+            <img src="../images/homepage/model_3.png" alt="Model x" height="700px">
+            </div>
         </div>
-</div>
+    </div>
 </div>
 
 </body>

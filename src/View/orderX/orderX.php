@@ -67,7 +67,7 @@
 
         <div class="col-md-4 ml">
             <div>
-                <img src="../images/homepage/model_x.png" alt="Model s red">
+                <img src="../images/homepage/model_x.png" alt="Model x">
             </div>
         </div>
     </div>
