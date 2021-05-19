@@ -59,15 +59,15 @@ $lgController = LoginController::getInstance();
                 let table = ``;
                 table += `
                 <label for="description">Név</label>
-                <input type="text" name="name" class="form-control col-12" id="name" value="${response.name}">
+                <input type="text" name="name" class="form-control col-12 opacity" id="name" value="${response.name}">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" class="form-control col-12" id="email" value="${response.email}">
+                <input type="email" name="email" class="form-control col-12 opacity" id="email" value="${response.email}">
                 <label for="address">Lakcim</label>
-                <input type="text" name="address" class="form-control col-12" id="address" value="${response.address}">
+                <input type="text" name="address" class="form-control col-12 opacity" id="address" value="${response.address}">
                 <label for="address">Telefonszám</label>
-                <input type="text" name="phone_num" class="form-control col-12" id="phone_num" value="${response.phone_number}">
+                <input type="text" name="phone_num" class="form-control col-12 opacity" id="phone_num" value="${response.phone_number}">
                 <label for="address">Adószám</label>
-                <input type="text" name="vat_num" class="form-control col-12" id="vat_num" value="${response.vat_number}">
+                <input type="text" name="vat_num" class="form-control col-12 opacity" id="vat_num" value="${response.vat_number}">
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="is_post_datas" >
                     <label class="form-check-label" for="is_post_datas">
