@@ -7,7 +7,7 @@
 | **Navbar** | Az oldal méretezése esetén is az összes hivatkozás látható maradjon | A várt működésnek megfelelő eredményt produkált. | - |
 | **Homepage** | A homepagen a hivatkozásokra kattintva a megfelelő modell borítsa a kijelzőt (pontosan) | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A Check it out gombok a megfelelő modellhez vezessenek(routing helyes megadása) | A várt működésnek megfelelő eredmény. | - |
-| **Homepage** | Reszponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | A nav kinézete lehetne jopbb |
+| **Homepage** | Reszponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | A nav stílusának megjelenése lehetne szebb.|
 | **Homepage** | A "to top" gomb megjelenik ha az oldalon elkezdünk legörgetni, vagy a nav egyik gombjára rákattintunk | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A "to top" gomb felvisz az oldal tetejére | A várt működésnek megfelelő eredmény. | - |
 | **My Orders page** | Reszponzív méreteződés (mobilra, tabletre) | A várt működésnek megfelelő eredmény. | - |
@@ -25,7 +25,7 @@
 | **Navbar** | A "Sandwich" menü az összes opciót felajánlja, és azok működjenek is | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A homepagen a hivatkozásokra kattintva a megfelelő modell borítsa a kijelzőt (pontosan) | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A Check it out gombok a megfelelő modellhez vezessenek | A várt működésnek megfelelő eredmény. | - |
-| **Homepage** | Reszoponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | A nav nézhetne ki jobban |
+| **Homepage** | Reszoponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | A nav stílusának megjelenése lehetne szebb.|
 | **Homepage** | A back to top gomb megjelenik ha az oldalon elkezdünk legörgetni, vagy a nav egyik gombjára rákattintunk | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A back to top gomb felvisz az oldal tetejére | A várt működésnek megfelelő eredmény. | - |
 | **My Orders page** | Reszoponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | - |
@@ -43,7 +43,7 @@
 | **Navbar** | Az oldal méretezése esetén is az összes hivatkozás látható maradjon | A várt működésnek megfelelő eredményt produkált. | - |
 | **Homepage** | A homepagen a hivatkozásokra kattintva a megfelelő modell borítsa a kijelzőt (pontosan) | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A Check it out gombok a megfelelő modellhez vezessenek(routing helyes megadása) | A várt működésnek megfelelő eredmény. | - |
-| **Homepage** | Reszponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | A nav kinézete lehetne jopbb |
+| **Homepage** | Reszponzív méreteződés (mobilra) | A várt működésnek megfelelő eredmény. | A nav stílusának megjelenése lehetne szebb.|
 | **Homepage** | A "to top" gomb megjelenik ha az oldalon elkezdünk legörgetni, vagy a nav egyik gombjára rákattintunk | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A "to top" gomb felvisz az oldal tetejére | A várt működésnek megfelelő eredmény. | - |
 | **My Orders page** | Reszponzív méreteződés (mobilra, tabletre) | A várt működésnek megfelelő eredmény. | - |
