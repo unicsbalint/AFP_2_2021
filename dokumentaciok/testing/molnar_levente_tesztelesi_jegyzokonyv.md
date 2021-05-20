@@ -3,8 +3,7 @@
 **Böngésző: Google Chrome**
 | **Tesztelendő elem** | **Elvárt működés** | **Eredmény** | **Megjegyzés** |
 | --- | --- | --- | --- |
-| **Navbar** | Ha a navbar elemeire ráviszem az egeret, egyértelműen jeleznie kell (pointer kurzor segítségéval), hogy az adott elem van kiválasztva. | A várt működésnek megfelelő eredményt produkált. | - |
-| **Navbar** | A "Hamburger" menü az összes opciót ajánlja fel, és azok működjenek is rendeltetésüknek megfelelően | A várt működésnek megfelelő eredményt produkált. | - |
+| **Navbar** | Ha a navbar elemeire ráviszem az egeret, jelzi , hogy az adott elem van kiválasztva. | A várt működésnek megfelelő eredményt produkált. | - |
 | **Navbar** | Az oldal méretezése esetén is az összes hivatkozás látható maradjon | A várt működésnek megfelelő eredményt produkált. | - |
 | **Homepage** | A homepagen a hivatkozásokra kattintva a megfelelő modell borítsa a kijelzőt (pontosan) | A várt működésnek megfelelő eredmény. | - |
 | **Homepage** | A Check it out gombok a megfelelő modellhez vezessenek(routing helyes megadása) | A várt működésnek megfelelő eredmény. | - |
