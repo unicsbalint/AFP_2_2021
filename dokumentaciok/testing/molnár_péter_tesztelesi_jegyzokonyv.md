@@ -1,6 +1,6 @@
-**Tesztelő: Molnár Péter  **  
-**Front-end / design elemek tesztelése:  **  
-**Böngésző: Firefox  **  
+**Tesztelő: Molnár Péter**   
+**Front-end / design elemek tesztelése:**   
+**Böngésző: Firefox**  
 
 | **Tesztelendő elem** | **Elvárt működés** | **Eredmény** | **Megjegyzés** |
 | --- | --- | --- | --- |
