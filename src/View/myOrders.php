@@ -27,6 +27,7 @@ require_once "nav.php";
 
 </body>
 <script>
+//        asdasdasd
     $("#setOrder").click(function() {
         $.ajax({
             url: "../Controller/localController.php",
